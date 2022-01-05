@@ -1,0 +1,37 @@
+# 10 Days of Javascript
+
+- Day 1
+    - [Day 1: Hello, World!](https://www.hackerrank.com/challenges/js10-hello-world/problem)
+    - [Day 1: Data Types](https://www.hackerrank.com/challenges/js10-data-types/problem)
+- Day 2
+    - [Day 2: Arithmetic Operators](https://www.hackerrank.com/challenges/js10-arithmetic-operators/problem)
+    - [Day 2: Functions](https://www.hackerrank.com/challenges/js10-function/problem)
+    - [Day 2: Let and Const](https://www.hackerrank.com/challenges/js10-let-and-const/problem)
+- Day 3
+    - [Day 3: Conditional Statements: If-Else](https://www.hackerrank.com/challenges/js10-if-else/problem)
+    - [Day 3: Conditional Statements: Switch](https://www.hackerrank.com/challenges/js10-switch/problem)
+    - [Day 3: Loops](https://www.hackerrank.com/challenges/js10-loops/problem)
+- Day 4
+    - [Day 4: Arrays](https://www.hackerrank.com/challenges/js10-arrays/problem)
+    - [Day 4: Try, Catch, and Finally](https://www.hackerrank.com/challenges/js10-try-catch-and-finally/problem)
+    - [Day 4: Throw](https://www.hackerrank.com/challenges/js10-throw/problem)
+- Day 5
+     - [Day 5: Create a Rectangle Object](https://www.hackerrank.com/challenges/js10-objects/problem)
+     - [Day 5: Count Objects](https://www.hackerrank.com/challenges/js10-count-objects/problem)
+     - [Day 5: Classes](https://www.hackerrank.com/challenges/js10-class/problem)
+- Day 6
+     - [Day 6: Inheritance](https://www.hackerrank.com/challenges/js10-inheritance/problem)
+     - [Day 6: Template Literals](https://www.hackerrank.com/challenges/js10-template-literals/problem)
+     - [Day 6: Arrow Functions](https://www.hackerrank.com/challenges/js10-arrows/problem)
+- Day 7
+     - [Day 7: Bitwise Operators](https://www.hackerrank.com/challenges/js10-bitwise/problem)
+     - [Day 7: JavaScript Dates](https://www.hackerrank.com/challenges/js10-date/problem)
+- Day 8
+     - [Day 8: Regular Expressions I](https://www.hackerrank.com/challenges/js10-regexp-1/problem)
+     - [Day 8: Regular Expressions II](https://www.hackerrank.com/challenges/js10-regexp-2/problem)
+     - [Day 8: Regular Expressions III](https://www.hackerrank.com/challenges/js10-regexp-3/problem)
+- Day 9
+     - [Day 9: Create a Button](https://www.hackerrank.com/challenges/js10-create-a-button?hr_b=1)
+     - [Day 9: Buttons Container](https://www.hackerrank.com/challenges/js10-buttons-container)
+- Day 10
+    - [Day 10: Binary Calculator](https://www.hackerrank.com/challenges/js10-binary-calculator?hr_b=1)
