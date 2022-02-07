@@ -1,8 +1,10 @@
-# CodeChallenges
+# GabiCode Challenger
 
-Neste repositóio armazenarei os códigos dos desafios resolvidos que tem como objetivo aperfeiçoar minha logica de programação e também aprender novas tecnologias
+Neste repositóio armazenarei o código do desafio resolvido que tem como objetivo aperfeiçoar minha logica de programação a prática de Html, Css E também aprender novas tecnologias/Métodos.
 
-## Sites dos desafios:
-  - [HackerRank](https://www.hackerrank.com/dashboard):                                                    
-       -> 10 Days of JS 
-  - [freeCodeCamp](https://www.freecodecamp.org/learn)
+## Desafios:
+  - [Clonar o seguinte projeto](#):                                                    
+       -> Front-end: https://www.figma.com/file/t8pVehq397Hee2WQRpK62k/IPCats?node-id=48%3A4
+       -> No ar:
+       -> status: Finished ✔️
+       -> Responsive: ❌
