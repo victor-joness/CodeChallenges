@@ -4,7 +4,7 @@ Neste repositóio armazenarei o código do desafio resolvido que tem como objeti
 
 ## Desafios:
   - [Clonar o seguinte projeto](#):                                                    
-       -> Front-end: https://www.figma.com/file/t8pVehq397Hee2WQRpK62k/IPCats?node-id=48%3A4
-       -> No ar:
-       -> status: Finished ✔️
-       -> Responsive: ❌
+       -> Front-end: https://www.figma.com/file/t8pVehq397Hee2WQRpK62k/IPCats?node-id=48%3A4                                                        
+       -> No ar:                                                                 
+       -> status: Finished ✔️                                                        
+       -> Responsive: ❌                                                                                   
