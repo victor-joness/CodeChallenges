@@ -134,4 +134,45 @@ function findElement(arr, func) {
 }
 console.log(findElement([1, 3, 5, 8, 9, 10], num => num % 2 === 0));
 
-//
+//Boo quem
+//Verifique se um valor é classificado como uma primitiva booleana. Retornar trueou false.
+
+function booWho(bool) {
+    if(typeof bool === "boolean"){
+        return true;
+    }else{
+        return false;
+    }
+}
+  
+console.log(booWho(true));
+console.log(booWho(NaN));
+
+//Título Case uma Frase
+//Retorna a string fornecida com a primeira letra de cada palavra em maiúscula. Certifique-se de que o resto da palavra esteja em letras minúsculas.
+function titleCase(str) {
+    const newTitle = str.split(" ");
+    const updatedTitle = [];
+    for (let st in newTitle) {
+      updatedTitle[st] = newTitle[st][0].toUpperCase() + newTitle[st].slice(1).toLowerCase();
+    }
+    return updatedTitle.join(" ");
+}
+console.log(titleCase("I'm a little tea pot"));
+
+//Fatiar e emendar,Você recebe duas matrizes e um índice, Copie cada elemento da primeira matriz na segunda matriz, em ordem.
+function frankenSplice(arr1, arr2, n) {
+    let matriz = arr1;
+    let matriz2 = arr2;
+    let intermediario = [];
+    let resultado = [];
+    let final = [];
+    intermediario = matriz2.slice(0,n);
+    final = matriz2.slice(n,arr2.length);
+
+    resultado = intermediario.concat(matriz).concat(final);
+
+    return resultado;
+}
+  
+  console.log(frankenSplice([1, 2, 3], [4, 5, 6], 1));
