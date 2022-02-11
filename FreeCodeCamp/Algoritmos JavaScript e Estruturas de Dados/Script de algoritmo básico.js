@@ -81,3 +81,28 @@ console.log(idade)
 
 //Confirme o final
 
+function confirmEnding(str, target) {
+    return str.slice(str.length - target.length) === target;
+}
+console.log(confirmEnding("He has to give me a new name", "name"));
+
+//Repetir uma String Repetir uma String,Repita uma determinada string str(primeiro argumento) por numvezes (segundo argumento). 
+function repeatStringNumTimes(str, num) {
+    let resultado = "";
+    if(num <= 0){
+        return "";
+    }
+    for(let i = 0; i < num; i++){
+        resultado = resultado + str
+    }
+    return resultado;
+}
+
+function repeatStringNumTimes2(str, num) {
+    let resultado = str.repeat(num);
+    return resultado;
+}
+console.log(repeatStringNumTimes2("abc", 3));
+
+//Truncar uma string
+
