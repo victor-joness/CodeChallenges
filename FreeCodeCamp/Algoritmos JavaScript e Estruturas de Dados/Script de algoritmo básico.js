@@ -106,3 +106,32 @@ console.log(repeatStringNumTimes2("abc", 3));
 
 //Truncar uma string
 
+function truncateString(str, num) {
+    let resultado = "";
+    if(str.length > num){
+        for(let i = 0; i < num; i++){
+            resultado = resultado + str[i]
+        }
+    }else{
+        return str;
+    }
+    return resultado + "..."
+}
+console.log(truncateString("A-tisket a-tasket A green and yellow basket", 8));
+
+//Achado não é roubado,Crie uma função que examine uma matriz arre retorne o primeiro elemento nela que passa em um 'teste de verdade'.
+function findElement(arr, func) {
+    let resultado = -1;
+    for(let i = 0; i < arr.length; i++){
+        if(func(arr[i])){
+            resultado = arr[i];
+            return resultado;
+        }
+    }    
+    if(resultado == -1){
+        return undefined;
+    }
+}
+console.log(findElement([1, 3, 5, 8, 9, 10], num => num % 2 === 0));
+
+//
