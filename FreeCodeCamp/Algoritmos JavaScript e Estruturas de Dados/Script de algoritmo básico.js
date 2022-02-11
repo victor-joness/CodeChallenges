@@ -174,5 +174,63 @@ function frankenSplice(arr1, arr2, n) {
 
     return resultado;
 }
+console.log(frankenSplice([1, 2, 3], [4, 5, 6], 1));
+
+//Falso Bouncer, Remova todos os valores falsos de uma matriz., Os valores falsos em JavaScript são false, null, 0, "", undefinede NaN.
+function bouncer(arr) {
+    let newArray = [];
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[i]) newArray.push(arr[i]);
+    }
+    return newArray;
+  }
+console.log(bouncer([7, "ate", "", false, 9]));
+console.log(bouncer([false, null, 0, NaN, undefined, ""]))
+
+//Onde eu pertenço
+//Retorna o índice mais baixo no qual um valor (segundo argumento) deve ser inserido em um array (primeiro argumento) depois de ordenado. O valor retornado deve ser um número.
+function getIndexToIns(arr, num) {
+    arr.sort();
+    let contador = 0;
+    for(let i=0; i< arr.length; i++){
+        if(num > arr[i]){
+            contador++;
+        }
+    }
+    return contador;
+}
+console.log(getIndexToIns([40, 60], 50));
+console.log(getIndexToIns([10, 20, 30, 40, 50], 30))
+
+//Mutações
+//Retorna truese a string no primeiro elemento da matriz contiver todas as letras da string no segundo elemento da matriz.
+function mutation(arr) {
+    var newArr = [];
+    var temp= 0;
+    for (var i = 0; i < arr.length; ++i) {
+      newArr[i] = arr[i].toLowerCase();
+    }
+    
+    for (var j = 0; j < newArr[1].length; ++j) {
+      if (newArr[0].indexOf(newArr[1][j]) < 0)
+        return false;
+    }
+   return true;
+  }
+console.log(mutation(["hello", "hey"]));
+console.log(mutation(["Mary", "Army"]));
+
+//Chunky Monkey
+//Escreva uma função que divida um array (primeiro argumento) em grupos com o comprimento de size(segundo argumento) e os retorne como um array bidimensional.
+function chunkArrayInGroups(arr, size) {
+    newArr = [];
+    var stop = size;
+    for(var i = 0; i < arr.length; i += size) {
+      newArr.push(arr.slice(i, stop));
+      stop += size;
+    }
+    return newArr;
+  }
   
-  console.log(frankenSplice([1, 2, 3], [4, 5, 6], 1));
+console.log(chunkArrayInGroups(["a", "b", "c", "d"], 2));
+console.log(chunkArrayInGroups([0, 1, 2, 3, 4, 5], 2))
