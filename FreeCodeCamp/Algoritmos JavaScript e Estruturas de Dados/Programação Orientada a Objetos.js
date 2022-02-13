@@ -281,6 +281,75 @@ Dog.prototype.bark = () => {
 }
 let beagle = new Dog();
 
-//
+//Substituir métodos herdados
+//fazemos assim como aprendemos antes, a unica diferença é que colocamos o mesmo nome, assim ira sobrescrever o prototype
+function Bird() { }
+Bird.prototype.fly = function() { return "I am flying!"; };
+function Penguin() { }
+Penguin.prototype = Object.create(Bird.prototype);
+Penguin.prototype.constructor = Penguin;
+
+Penguin.prototype.fly = () =>{
+  return "Alas, this is a flightless bird."
+}
+
+let penguin = new Penguin();
+console.log(penguin.fly());
+
+//Use um Mixin para adicionar um comportamento comum entre objetos não relacionados
+//Como você viu, o comportamento é compartilhado por meio da herança. No entanto, há casos em que a herança não é a melhor solução. A herança não funciona bem para objetos não relacionados como Birde Airplane. Ambos podem voar, mas a Birdnão é um tipo de Airplanee vice-versa.
+//O flyMixinpega qualquer objeto e dá a ele o flymétodo.
+let flyMixin = function(obj) {
+    obj.fly = function() {
+      console.log("Flying, wooosh!");
+    }
+};
+
+let bird = {
+    name: "Donald",
+    numLegs: 2
+};
+  
+let plane = {
+    model: "777",
+    numPassengers: 524
+};  
+flyMixin(bird);
+flyMixin(plane);
+
+//temos outro exemplo aqui
+let bird = {
+    name: "Donald",
+    numLegs: 2
+  };
+  
+  let boat = {
+    name: "Warrior",
+    type: "race-boat"
+  };
+  
+let glideMixin = (obj) => {
+    obj.glide = () => { 
+      console.log("deslizar");
+    }
+}
+  
+glideMixin(bird);
+glideMixin(boat);
+
+//Use Closure para proteger as propriedades dentro de um objeto de serem modificadas externamente   
+//No desafio anterior, birdtinha um imóvel público name. É considerado público porque pode ser acessado e alterado fora da birddefinição do .
+//A maneira mais simples de tornar essa propriedade pública privada é criando uma variável dentro da função construtora. 
+//Aqui getHatchedEggCountestá um método privilegiado, porque tem acesso à variável privada hatchedEgg. e isso é chamdo de closure
+
+function Bird() {
+    let weight = 15;
+  
+    this.getWeight = () => {
+      return weight
+    }
+}
+
+
 
 
