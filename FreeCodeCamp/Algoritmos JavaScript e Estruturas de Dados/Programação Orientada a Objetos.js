@@ -116,4 +116,59 @@ for (let property in duck) {
 console.log(ownProps2);
 console.log(prototypeProps);
 
-//Entenda a Propriedade do Construtor,
+//Entenda a Propriedade do Construtor,Observe que a constructorpropriedade é uma referência à função construtora que criou a instância. A vantagem da constructorpropriedade é que é possível verificar 
+//essa propriedade para descobrir que tipo de objeto ela é. Aqui está um exemplo de como isso pode ser usado:
+
+function Dog(name) {
+    this.name = name;
+}
+  
+// Only change code below this line
+function joinDogFraternity(candidate) {
+    if(candidate.constructor === Dog){
+        return true;
+    }else{
+        return false;
+    }
+}
+
+//Alterar o protótipo para um novo objeto,Uma maneira mais eficiente é definir o prototypecomo um novo objeto que já contém as propriedades. Desta forma, as propriedades são adicionadas de uma só vez:
+
+function Dog(name) {
+    this.name = name;
+}
+  
+//desta forma o prototype recebe 3 propriedade de uma vez e adiciona a dog
+Dog.prototype = {
+    numLegs: 2,
+    eat: () => {
+        console.log("nom nom nom");
+    },
+    describe: () =>{
+        console.log("My name is " + this.name);
+    }
+};
+
+//Lembre-se de definir a propriedade do construtor ao alterar o protótipo,
+//Há um efeito colateral crucial de configurar manualmente o protótipo para um novo objeto. Ele apaga a constructorpropriedade! 
+duck.constructor === Bird; //return false
+duck.constructor === Object; //return true
+duck instanceof Bird; //return true
+//Para corrigir isso, sempre que um protótipo for definido manualmente para um novo objeto, lembre-se de definir a constructorpropriedade:
+function Dog(name) {
+    this.name = name;
+  }
+  
+  // Only change code below this line
+  Dog.prototype = {
+    constructor: Dog,
+    numLegs: 4,
+    eat: function() {
+      console.log("nom nom nom");
+    },
+    describe: function() {
+      console.log("My name is " + this.name);
+    }
+  };
+
+  //Entenda de onde vem o protótipo de um objeto
