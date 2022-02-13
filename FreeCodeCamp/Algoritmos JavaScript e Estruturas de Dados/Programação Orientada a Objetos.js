@@ -350,6 +350,55 @@ function Bird() {
     }
 }
 
+//Entenda a expressão de função chamada imediatamente (IIFE),Um padrão comum em JavaScript é executar uma função assim que ela é declarada:
+//para isso usamos o () no final da funcao e envolta dela mesma, fazemos isso com funcoes anonimas, 
+(function () {
+    console.log("Chirp, chirp!");
+})();
 
+//ex2
+(() => {
+    console.log("A cozy nest is ready");
+})();
 
+//Use um IIFE para criar um módulo
+//Uma expressão de função imediatamente invocada (IIFE) é frequentemente usada para agrupar funcionalidades relacionadas em um único objeto ou módulo . Por exemplo, um desafio anterior definiu dois mixins:
+//Observe que você tem uma expressão de função imediatamente invocada (IIFE) que retorna um objeto motionModule. Este objeto retornado contém todos os comportamentos do mixin como propriedades do objeto. A vantagem do padrão de módulo é que todos os comportamentos de movimento podem ser empacotados em um único objeto que pode ser usado por outras partes do seu código. Aqui está um exemplo usando-o:
 
+let motionModule = (function () {
+    return {
+      glideMixin: function(obj) {
+        obj.glide = function() {
+          console.log("Gliding on the water");
+        };
+      },
+      flyMixin: function(obj) {
+        obj.fly = function() {
+          console.log("Flying, wooosh!");
+        };
+      }
+    }
+})();
+
+//guardamos 2 propriedades que sao mixin dentro de motionModule, assim conseguimos modular e encapsular mt bem nosso codigo
+motionModule.glideMixin(duck);
+duck.glide();
+
+//Crie um módulo chamado funModulepara agrupar os dois mixins isCuteMixine singMixin. funModuledeve retornar um objeto.
+
+let funModule = (( ) => { 
+    return {
+    isCuteMixin : function(obj) {
+         obj.isCute = function() {
+         return true;
+      }
+    },
+    singMixin : function(obj) {
+      obj.sing = function() {
+        console.log("Singing to an awesome tune");
+      }
+    }
+    }
+  })();
+
+  //temos que lembrar de usar : pois ainda sim é um objeto e tbm temos que usar o return
