@@ -223,4 +223,64 @@ function Cat(name) {
       }
   };
 
-  //Herdar Comportamentos de um Supertipo
+//Defina o protótipo do filho para uma instância do pai
+//Modifique o código para que as instâncias de Dogherdar de Animal.
+function Animal() { }
+
+Animal.prototype = {
+  constructor: Animal,
+  eat: function() {
+    console.log("nom nom nom");
+  }
+};
+
+function Dog() { }
+
+// com isso, dog tera acesso a todos os prototypes de animais, e fazemos a herança mais simples desse jeito
+Dog.prototype = Object.create(Animal.prototype);
+
+let beagle = new Dog();
+
+//Redefinir uma propriedade de construtor herdada
+//Quando um objeto herda prototypede outro objeto, ele também herda a propriedade de construtor do supertipo.   
+//Mas ducke todas as instâncias de Birddevem mostrar que foram construídas por Birde não Animal. Para fazer isso, você pode definir manualmente a propriedade do construtor Birdpara o Birdobjeto:
+//Corrija o código assim duck.constructore beagle.constructorretorne seus respectivos construtores.
+
+function Animal() { }
+function Bird() { }
+function Dog() { }
+
+//aqui eles estavam com o construtor animais
+Bird.prototype = Object.create(Animal.prototype);
+Dog.prototype = Object.create(Animal.prototype);
+
+//aqui eu mudei eles para o construtor de origen, e ainda sim continuam recebem as propiedades de animais
+Bird.prototype.constructor = Bird;
+Dog.prototype.constructor = Dog;
+
+let duck = new Bird();
+let beagle = new Dog();
+
+//Adicionar métodos após a herança, podemos fazer isso manualmente, assim como foi ensinado antes
+Bird.prototype.fly = function() {
+    console.log("I'm flying!");
+  };
+//Uma função construtora que herda seu prototypeobjeto de uma função construtora de supertipo ainda pode ter seus próprios métodos além dos métodos herdados.
+//Adicione todo o código necessário para que o Dogobjeto seja herdado Animale o Dogconstrutor do prototypeseja definido como Dog. Em seguida, adicione um bark()método ao Dogobjeto para que beagleambos eat()e bark(). O bark()método deve imprimir Woof!no console.
+
+function Animal() { }
+Animal.prototype.eat = function() { console.log("nom nom nom"); };
+function Dog() { }
+
+// Only change code below this line
+Dog.prototype = Object.create(Animal.prototype);
+Dog.prototype.constructor = Dog;
+
+Dog.prototype.bark = () => {
+  console.log("Woof!")
+}
+let beagle = new Dog();
+
+//
+
+
