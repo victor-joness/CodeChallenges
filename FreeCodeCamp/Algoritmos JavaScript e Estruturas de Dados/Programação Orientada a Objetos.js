@@ -172,3 +172,55 @@ function Dog(name) {
   };
 
   //Entenda de onde vem o protótipo de um objeto
+  //Assim como as pessoas herdam genes de seus pais, um objeto herda prototypediretamente da função construtora que o criou. Por exemplo, aqui o Birdconstrutor cria o duckobjeto:
+  //Use isPrototypeOfpara verificar o prototypede beagle.
+
+function Dog(name) {
+    this.name = name;
+}
+  
+let beagle = new Dog("Snoopy");
+
+console.log(Dog.prototype.isPrototypeOf(beagle));
+
+//Entenda a cadeia de protótipos, Todos os objetos em JavaScript (com algumas exceções) têm uma extensão prototype. Além disso, o prototypepróprio objeto é um objeto.
+//Como a prototypeé um objeto, a prototypepode ter seu próprio prototype! Neste caso, o prototypede Bird.prototypeé Object.prototype:
+//Portanto, qualquer objeto pode usar o hasOwnPropertymétodo.
+function Dog(name) {
+    this.name = name;
+}
+  
+let beagle = new Dog("Snoopy");
+  
+Dog.prototype.isPrototypeOf(beagle);  // yields true
+  
+// Fix the code below so that it evaluates to true
+Object.prototype.isPrototypeOf(Dog.prototype);
+
+//Use a herança para não se repetir
+//O eatmétodo é repetido em ambos Cate Bear. Edite o código no espírito de DRY movendo o eatmétodo para o arquivo Animal supertype.
+function Cat(name) {
+    this.name = name;
+  }
+  
+  Cat.prototype = {
+    constructor: Cat,
+  };
+  
+  function Bear(name) {
+    this.name = name;
+  }
+  
+  Bear.prototype = {
+    constructor: Bear,
+  };
+  
+  function Animal() { }
+  Animal.prototype = {
+    constructor: Animal,
+    eat: function() {
+        console.log("nom nom nom");
+      }
+  };
+
+  //Herdar Comportamentos de um Supertipo
