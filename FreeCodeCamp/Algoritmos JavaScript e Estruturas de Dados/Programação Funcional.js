@@ -276,3 +276,34 @@ const ratings = watchList.map( filme => ({
 
 console.log(JSON.stringify(ratings));
 
+//Implementar mapa em um protótipo
+//o mapmétodo retorna um array com o mesmo tamanho daquele em que foi chamado. Ele também não altera o array original, desde que sua função de retorno de chamada não o faça.
+// The global variable
+const s = [23, 65, 98, 5];
+
+Array.prototype.myMap = function(callback) {
+  const newArray = [];
+  // Only change code below this line
+  for(let i = 0;i < this.length; i++){
+    newArray.push(callback(this[i]))
+  }
+  // Only change code above this line
+  return newArray;
+};
+
+//aqui eu ja chamo o myMap passando uma funcao de callback
+const new_s = s.myMap(function(item) {
+  return item * 2;
+});
+
+//Use o método filter para extrair dados de um array
+//filterchama uma função em cada elemento de um array e retorna um novo array contendo apenas os elementos para os quais essa função retorna true.
+const users = [
+  { name: 'John', age: 34 },
+  { name: 'Amy', age: 20 },
+  { name: 'camperCat', age: 10 }
+];
+
+const usersUnder30 = users.filter(user => user.age < 30);
+console.log(usersUnder30);
+
