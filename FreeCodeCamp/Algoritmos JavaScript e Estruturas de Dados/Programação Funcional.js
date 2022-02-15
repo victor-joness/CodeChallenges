@@ -354,4 +354,32 @@ function sliceArray(anim, beginSlice, endSlice) {
   const inputAnim = ["Cat", "Dog", "Tiger", "Zebra", "Ant"];
   sliceArray(inputAnim, 1, 3);
 
-//
+//Remover elementos de um array usando slice em vez de splice
+//splicemétodo para isso, que recebe argumentos para o índice de onde começar a remover itens e, em seguida, o número de itens a serem removidos.
+//ou seja vc dar como parametro a entrada e quantos elementos a partir dele voce quer remover
+//No entanto, o splicemétodo altera a matriz original em que é chamado, então por isso talvez seja uma boa pratica remover elementos com o slice, ja que ele retorna o array a ser removido
+
+const cities = ["Chicago", "Delhi", "Islamabad", "London", "Berlin"];
+cities.splice(3, 1);
+//aqui, removemos a cidade "london", ou seja cities passa a ser ["Chicago", "Delhi", "Islamabad", "Berlin"].
+
+function nonMutatingSplice(cities) {
+  return cities.slice(0, 3);
+}
+var inputCities = ["Chicago", "Delhi", "Islamabad", "London", "Berlin"];
+nonMutatingSplice(inputCities);
+
+//Combine dois arrays usando o método concat
+/*JavaScript oferece o concatmétodo para strings e arrays que funcionam da mesma maneira. Para arrays,
+ o método é chamado em um, então outro array é fornecido como argumento para concat, que é adicionado ao
+  final do primeiro array. Ele retorna uma nova matriz e não altera nenhuma das matrizes originais
+ */
+function nonMutatingConcat(original, attach) {
+    return original.concat(attach);
+} 
+const first = [1, 2, 3];
+const second = [4, 5];
+nonMutatingConcat(first, second);
+//vamos fazer essa funcao na mao;
+
+
