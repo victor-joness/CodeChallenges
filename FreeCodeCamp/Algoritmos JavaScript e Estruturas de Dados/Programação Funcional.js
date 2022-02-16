@@ -754,7 +754,66 @@ function urlSlug(title) {
 // Only change code above this line
 console.log(urlSlug("A Mind Needs Books Like A Sword Needs A Whetstone"));
 
-//
+//Use o método every para verificar se cada elemento em uma matriz atende a um critério
+//O everymétodo funciona com arrays para verificar se cada elemento passa em um teste específico. Ele retorna um valor booleano - truese todos os valores atenderem aos critérios, falsecaso contrário.
+function checkPositive(arr) {
+  return arr.every((item) => item > 0);
+}
+
+checkPositive([1, 2, 3, -4, 5]);
+
+//Use o método some para verificar se quaisquer elementos em uma matriz atendem a um critério
+//O somemétodo funciona com arrays para verificar se algum elemento passa em um teste específico. Ele retorna um valor booleano - truese algum dos valores atender aos critérios, falsecaso contrário.
+//Por exemplo, o código a seguir verificaria se algum elemento na numbersmatriz é menor que 10:
+
+const numbers = [10, 50, 8, 220, 110, 11];
+
+numbers.some(function(currentValue) {
+  return currentValue < 10;
+});
+
+//Use o somemétodo dentro da checkPositivefunção para verificar se algum elemento em arré positivo. A função deve retornar um valor booleano.
+function checkPositive(arr) {
+  return arr.some( (item) => item > 0)
+}
+
+checkPositive([1, 2, 3, -4, 5]);
+
+//Introdução ao Curry e Aplicação Parcial
+//A aridade de uma função é o número de argumentos que ela requer. Currying uma função significa converter uma função de N aridade em N funções de aridade 1.
+function unCurried(x, y) {
+  return x + y;
+}
+
+function curried(x) {
+  return function(y) {
+    return x + y;
+  }
+}
+
+const curried = x => y => x + y
+
+curried(1)(2)
+
+//Isso é útil em seu programa se você não puder fornecer todos os argumentos para uma função de uma só vez
+//Preencha o corpo da addfunção para que ela use currying para adicionar parâmetros x, y, e z.
+function add(x) {
+  return function(y){
+    return function(z){
+      return x + y + z;
+    }
+  }
+}
+
+add(10)(20)(30);
+
+//isso é a mesma coisa que
+function add(x,y,z){
+  return x + y + z
+}
+
+(x, y, z) => x+y+z;
+
 
 
 
