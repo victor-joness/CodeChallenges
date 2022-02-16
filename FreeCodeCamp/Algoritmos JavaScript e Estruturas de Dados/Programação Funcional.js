@@ -678,3 +678,42 @@ console.log(getRating(watchList));
 //forma que eu consegui fazer de primeira, a media dos ratings dos filmes usando reduce.
 
 //Use funções de ordem superior mapeiam, filtram ou reduzem para resolver um problema complexo
+//Agora que você trabalhou em alguns desafios usando funções de ordem superior como map(), filter()e reduce(), agora você pode aplicá-las para resolver um desafio mais complexo.
+
+const squareList = arr => {
+  return(arr.filter(num => num > 0 && num % parseInt(num) === 0).map(num =>(num * num)))
+};
+
+const squaredIntegers = squareList([-3, 4.8, 5, 3, -3.2]);
+console.log(squaredIntegers);
+console.log(squareList([4, 5.6, -9.8, 3.14, 42, 6, 8.34, -2]))
+
+//Classifique uma matriz alfabeticamente usando o método de classificação
+//podemos passar uma funcao de callback, para determinar a ordem do sort, por padrao, ele arruma do menor para o maior, e como as letras vale numeros
+//no sistema unicode, alguns numeros são menores que outros pro exemplo o 10 é menor que o 2 pq o 10 tem o 1 na frente do 2,
+//por isso devemos usar uma funcao de comparação quando queremos o menor numero.  
+function alphabeticalOrder(arr) {
+  return arr.sort();
+}
+
+console.log(alphabeticalOrder(["a", "d", "c", "a", "z", "g"]));
+
+//funcao que retorna sempre o menor numero
+function compararNumeros(a, b) {
+  return a - b;
+}
+
+//Retornar um array ordenado sem alterar o array original
+//Um efeito colateral do sortmétodo é que ele altera a ordem dos elementos na matriz original.
+const globalArray = [5, 6, 3, 2, 9];
+
+  function nonMutatingSort(arr) {
+    let novo = arr.concat();
+    novo.sort(function compararNumeros(a, b) {
+      return a - b;
+    })
+    return novo;
+  }
+console.log(nonMutatingSort(globalArray));
+
+//Dividir uma string em um array usando o método split
