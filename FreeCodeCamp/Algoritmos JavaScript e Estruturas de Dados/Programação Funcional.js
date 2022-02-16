@@ -717,3 +717,44 @@ const globalArray = [5, 6, 3, 2, 9];
 console.log(nonMutatingSort(globalArray));
 
 //Dividir uma string em um array usando o método split
+/*
+O splitmétodo divide uma string em um array de strings. Leva um argumento para o delimitador, que pode ser um caractere
+ a ser usado para quebrar a string ou uma expressão regular. Por exemplo, se o delimitador for um espaço, você obterá uma 
+ matriz de palavras e, se o delimitador for uma sequência vazia, obterá uma matriz de cada caractere na sequência.
+*/
+
+const str = "Hello World";
+const bySpace = str.split(" ");
+
+const otherString = "How9are7you2today";
+const byDigits = otherString.split(/\d/);
+
+function splitify(str) {
+  return str.split(/\W/);
+}
+
+console.log(splitify("Hello World,I-am code"));
+
+//Combine um array em uma string usando o método join
+//O join método é usado para unir os elementos de um array para criar uma string. Leva um argumento para o delimitador que é usado para separar os elementos da matriz na string.
+
+//primeiro separamos e tiramos os caracteres especiais, e depois juntamos tudo novamente com o join
+function sentensify(str) {
+  return str.split(/\W/).join(" ");
+}
+
+console.log(sentensify("May-the-force-be-with-you"));
+
+//Aplicar programação funcional para converter strings em slugs de URL
+// Only change code below this line
+function urlSlug(title) {
+  return title.toLowerCase().trim().split(/\s+/).join("-")
+
+}
+// Only change code above this line
+console.log(urlSlug("A Mind Needs Books Like A Sword Needs A Whetstone"));
+
+//
+
+
+
