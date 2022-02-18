@@ -83,3 +83,41 @@ console.log(spinalCase('This Is Spinal Tap'));
 console.log(spinalCase("thisIsSpinalTap"));
 
 //porco latino
+//Pig Latin é uma maneira de alterar palavras em inglês. As regras são as seguintes:
+
+/* - Se uma palavra começa com uma consoante, pegue a primeira consoante ou encontro consonantal, mova-a para o final da palavra e adicione aya ela.
+- Se uma palavra começa com uma vogal, basta adicionar wayno final. */
+
+function translatePigLatin(str) {
+  let consonantRegex = /^[^aeiou]+/;
+  let myConsonants = str.match(consonantRegex);
+  return myConsonants !== null
+    ? str
+        .replace(consonantRegex, "")
+        .concat(myConsonants)
+        .concat("ay")
+    : str.concat("way");
+}
+
+console.log(translatePigLatin("consonant"));
+console.log(translatePigLatin("california"));
+console.log(translatePigLatin("glove"))
+
+//Pesquisar e substituir
+//Faça uma pesquisa e substitua na frase usando os argumentos fornecidos e retorne a nova frase.
+function myReplace(str, before, after) {
+  // Find index where before is on string
+  var index = str.indexOf(before);
+  // Check to see if the first letter is uppercase or not
+  if (str[index] === str[index].toUpperCase()) {
+    // Change the after word to be capitalized before we use it.
+    after = after.charAt(0).toUpperCase() + after.slice(1);
+  } else {
+    // Change the after word to be uncapitalized before we use it.
+    after = after.charAt(0).toLowerCase() + after.slice(1);
+  }
+  // Now replace the original str with the edited one.
+  str = str.replace(before, after);
+
+  return str;
+}
