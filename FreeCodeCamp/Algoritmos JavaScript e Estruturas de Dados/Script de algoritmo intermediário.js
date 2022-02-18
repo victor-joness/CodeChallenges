@@ -50,8 +50,36 @@ Você receberá um array inicial (o primeiro argumento na destroyerfunção), se
  Remova todos os elementos da matriz inicial que tenham o mesmo valor desses argumentos.
 */
 
-function destroyer(arr) {
-    return arr;
-  }
+function destroyer(arr, ...valsToRemove) {
+  return arr.filter(elem => !valsToRemove.includes(elem));
+}
   
-  destroyer([1, 2, 3, 1, 2, 3], 2, 3);
+console.log(destroyer([1, 2, 3, 1, 2, 3], 2, 3));
+
+//Portanto és
+//Faça uma função que examine uma matriz de objetos (primeiro argumento) e retorne uma matriz de todos os objetos que tenham pares de nome e valor correspondentes (segundo argumento)
+
+function whatIsInAName(collection, source) {
+  const arr = [];
+  // Only change code below this line
+  var srcKeys = Object.keys(source);
+  
+  // Only change code above this line
+  return arr;
+}
+
+console.log(whatIsInAName([{ first: "Romeo", last: "Montague" }, { first: "Mercutio", last: null },
+ { first: "Tybalt", last: "Capulet" }], { last: "Capulet" }));
+
+ //Estojo de punção lombar
+ //Converta uma corda em caso espinhal. Spinal case são todas as palavras em minúsculas unidas por travessões.
+
+function spinalCase(str) {
+  str = str.replace(/([a-z])([A-Z])/g, "$1 $2");
+  return str.toLowerCase().split(/(?:_| )+/).join("-")
+}
+
+console.log(spinalCase('This Is Spinal Tap'));
+console.log(spinalCase("thisIsSpinalTap"));
+
+//porco latino
