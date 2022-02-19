@@ -255,5 +255,31 @@ function uniteUnique(arr) {
   return uniqueValues;
 }
 
-
 //Converter entidades HTML
+//Converta os caracteres &, <, >, "(aspas duplas) e '(apóstrofo) em uma string para suas entidades HTML correspondentes.
+
+function convertHTML(str) {
+
+  let resultado = str.split("");
+
+  for(let i = 0; i < resultado.length; i++){
+    if(resultado[i] == "&"){
+      resultado[i] = "&amp;";
+    }else if (resultado[i] == "<"){
+      resultado[i] = "&lt;";
+    }else if( resultado[i] == ">"){
+      resultado[i] = "&gt;";
+    }else if( resultado[i] == '"'){
+      resultado[i] = "&quot;";
+    }else if ( resultado[i] == "'"){
+      resultado[i] = "&apos;";
+    }
+  }
+
+  return resultado.join("");
+}
+
+console.log(convertHTML("Dolce & Gabbana"));
+console.log(convertHTML("Schindler's List"))
+
+//Soma todos os números ímpares de Fibonacci
