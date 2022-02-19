@@ -121,3 +121,98 @@ function myReplace(str, before, after) {
 
   return str;
 }
+
+
+//Emparelhamento de DNA
+//A fita de DNA está faltando o elemento de pareamento. Pegue cada caractere, pegue seu par e retorne os resultados como uma matriz 2d.
+
+//forma mais proxima que eu consegui
+function pairElement(str) {
+  let array = str.split("");
+  let ge = ["g", "G"];
+  let ce = ["c", "C"];
+  let aa = ["a", "A"];
+  let te = ["t", "T"];
+  let resultado = [];
+
+  for(let i = 0; i < array.length; i++){
+    if(ge.indexOf(array[i]) == 1){
+        let res = array[i].concat("C");
+        resultado.push(res);
+    }else if(ce.indexOf(array[i] == 1)){
+        let res = array[i].concat("G");
+        resultado.push(res);
+    }else if(aa.indexOf(array[i]) == 1){
+        let res = array[i].concat("T");
+        resultado.push(res);
+    }else if(te.indexOf(array[i] == 1)){
+        let res = array[i].concat("A");
+        resultado.push(res);
+    }
+  }
+  return resultado
+}
+
+console.log(pairElement("GCG"));
+
+
+//forma correta
+function pairElement(str) {
+  // Return each strand as an array of two elements, the original and the pair.
+  var paired = [];
+
+  // Function to check with strand to pair.
+  var search = function(char) {
+    switch (char) {
+      case "A":
+        paired.push(["A", "T"]);
+        break;
+      case "T":
+        paired.push(["T", "A"]);
+        break;
+      case "C":
+        paired.push(["C", "G"]);
+        break;
+      case "G":
+        paired.push(["G", "C"]);
+        break;
+    }
+  };
+
+  // Loops through the input and pair.
+  for (var i = 0; i < str.length; i++) {
+    search(str[i]);
+  }
+
+  return paired;
+}
+
+// test here
+pairElement("GCG");
+
+//forma que eu fiz analizando a correta
+
+function pairElement2(str) {
+  let array = str.split("");
+  let ge = ["g", "G"];
+  let ce = ["c", "C"];
+  let aa = ["a", "A"];
+  let te = ["t", "T"];
+  let resultado = [];
+
+  for(let i = 0; i < array.length; i++){
+    if(ge.includes(array[i])){
+        resultado.push(["G", "C"]);
+    }else if(ce.includes(array[i])){
+        resultado.push(["C", "G"]);
+    }else if(aa.includes(array[i])){
+        resultado.push(["A", "T"]);
+    }else if(te.includes(array[i])){
+        resultado.push(["T", "A"]);
+    }
+  }
+  return resultado
+}
+
+console.log(pairElement("GCG"));
+console.log(pairElement2("ATCGA"))
