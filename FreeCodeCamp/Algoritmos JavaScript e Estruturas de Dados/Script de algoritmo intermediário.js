@@ -216,3 +216,44 @@ function pairElement2(str) {
 
 console.log(pairElement("GCG"));
 console.log(pairElement2("ATCGA"))
+
+
+//Cartas desaparecidas
+//Encontre a letra ausente no intervalo de letras passado e devolva-a.
+function fearNotLetter(str) {
+  for (var i = 0; i < str.length; i++) {
+    /* code of current character */
+    var code = str.charCodeAt(i);
+
+    /* if code of current character is not equal to first character + no of iteration
+        hence character has been escaped */
+    if (code !== str.charCodeAt(0) + i) {
+      /* if current character has escaped one character find previous char and return */
+      return String.fromCharCode(code - 1);
+    }
+  }
+  return undefined;
+}
+
+// test here
+fearNotLetter("abce");
+
+//União ordenada
+//Escreva uma função que receba duas ou mais matrizes e retorne uma nova matriz de valores exclusivos na ordem das matrizes fornecidas originais.
+function uniteUnique(arr) {
+  var args = Array.from(arguments);
+  var uniqueValues = [];
+
+  for (var i = 0; i < args.length; i++) {
+    for (var j = 0; j < args[i].length; j++) {
+      if (!uniqueValues.includes(args[i][j])) {
+        uniqueValues.push(args[i][j]);
+      }
+    }
+  }
+
+  return uniqueValues;
+}
+
+
+//Converter entidades HTML
