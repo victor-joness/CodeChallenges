@@ -255,7 +255,7 @@ function uniteUnique(arr) {
   return uniqueValues;
 }
 
-//Converter entidades HTML
+//Converter entidades HTMLL
 //Converta os caracteres &, <, >, "(aspas duplas) e '(apóstrofo) em uma string para suas entidades HTML correspondentes.
 
 function convertHTML(str) {
@@ -278,10 +278,8 @@ function convertHTML(str) {
 
   return resultado.join("");
 }
-
 console.log(convertHTML("Dolce & Gabbana"));
 console.log(convertHTML("Schindler's List"))
-
 //Soma todos os números ímpares de Fibonacci
 function sumFibs(num) {
   let prevNumber = 0;
@@ -297,5 +295,3 @@ function sumFibs(num) {
 
   return result;
 }
-
-//
