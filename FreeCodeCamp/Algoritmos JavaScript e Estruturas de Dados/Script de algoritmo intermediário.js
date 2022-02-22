@@ -295,3 +295,57 @@ function sumFibs(num) {
 
   return result;
 }
+
+//Soma todos os primos
+
+function sumPrimes(num) {
+  // Helper function to check primality
+  function isPrime(num) {
+    for (let i = 2; i <= Math.sqrt(num); i++) {
+      if (num % i == 0)
+        return false;
+    }
+    return true;
+  }
+
+  // Check all numbers for primality
+  let sum = 0;
+  for (let i = 2; i <= num; i++) {
+    if (isPrime(i))
+      sum += i;
+  }
+  return sum;
+}
+
+//Múltiplo Comum Mínimo
+function smallestCommons(arr) {
+  // Setup
+  const [min, max] = arr.sort((a, b) => a - b);
+  const numberDivisors = max - min + 1;
+  // Largest possible value for SCM
+  let upperBound = 1;
+  for (let i = min; i <= max; i++) {
+    upperBound *= i;
+  }
+  // Test all multiples of 'max'
+  for (let multiple = max; multiple <= upperBound; multiple += max) {
+    // Check if every value in range divides 'multiple'
+    let divisorCount = 0;
+    for (let i = min; i <= max; i++) {
+      // Count divisors
+      if (multiple % i === 0) {
+        divisorCount += 1;
+      }
+    }
+    if (divisorCount === numberDivisors) {
+      return multiple;
+    }
+  }
+}
+
+//Largue
+//Dada a matriz arr, itere e remova cada elemento começando do primeiro elemento (o índice 0) até que a função funcretorne truequando o elemento iterado for passado por ela.
+//Em seguida, retorne o restante do array assim que a condição for satisfeita, caso contrário, arrdeverá ser retornado como um array vazio.
+
+
+
