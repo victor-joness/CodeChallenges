@@ -14,4 +14,6 @@ Neste repositóio armazenarei os códigos dos desafios resolvidos que tem como o
   - [He4rtlabs Challenges](https://discord.io/he4rt):                                                     
        ->Calculadora de hora p/ Freelance	Front-End	Iniciante                                                              
        ->Planilha de cotação p/ Freelance	Front-End	Iniciante                                                               
-       ->Formulário Único login and signup                                                             
+       ->Formulário Único login and signup                      
+  - [Cod3r]():                                                                                 
+       ->40 desafios de JavaScript: Fundamentos, estruturas de controle e funções.                                
