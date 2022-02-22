@@ -450,16 +450,33 @@ console.log(addTogether(2)(5));
 
 const Person = function(firstAndLast) {
   // Only change code below this line
+  let fullname = firstAndLast;
+
   this.getFirstName = function(){
-    return firstAndLast.split(" ")[0];
+    return fullname.split(" ")[0];
   }
   // Complete the method below and implement the others similarly
   this.getFullName = function() {
-    return firstAndLast;
+    return fullname;
   };
 
-  
+  this.getLastName = function(){
+    return fullname.split(" ")[fullname.split(" ").length - 1];
+  }
+
+  this.setFirstName = function(name){
+    fullname = name + " " + fullname.split(" ")[fullname.split(" ").length - 1];
+  }
+
+  this.setLastName = function(name){
+    fullname = fullname.split(" ")[0] + " " + name;
+  }
+
+  this.setFullName = function(firstAndLast){
+    fullname = firstAndLast;
+  }
 };
 
 const bob = new Person('Bob Ross');
+bob.setFirstName("victor")
 console.log(bob.getFirstName());
