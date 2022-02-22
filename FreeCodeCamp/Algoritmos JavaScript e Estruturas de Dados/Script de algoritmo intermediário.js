@@ -450,7 +450,9 @@ console.log(addTogether(2)(5));
 
 const Person = function(firstAndLast) {
   // Only change code below this line
-  
+  this.getFirstName = function (){
+    return firstAndLast.split(" ")[0];
+  }
 
   // Complete the method below and implement the others similarly
   this.getFullName = function() {
@@ -460,4 +462,4 @@ const Person = function(firstAndLast) {
 };
 
 const bob = new Person('Bob Ross');
-bob.getFullName();
+console.log(bob.getFirstName());
