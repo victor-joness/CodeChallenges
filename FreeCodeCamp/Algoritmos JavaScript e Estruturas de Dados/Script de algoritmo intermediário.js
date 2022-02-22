@@ -347,5 +347,117 @@ function smallestCommons(arr) {
 //Dada a matriz arr, itere e remova cada elemento começando do primeiro elemento (o índice 0) até que a função funcretorne truequando o elemento iterado for passado por ela.
 //Em seguida, retorne o restante do array assim que a condição for satisfeita, caso contrário, arrdeverá ser retornado como um array vazio.
 
+function dropElements(arr, func) {
+  while (arr.length > 0 && !func(arr[0])) {
+    arr.shift();
+  }
+  return arr;
+}
 
+// test here
+dropElements([1, 2, 3, 4], function(n) {
+  return n >= 3;
+});
 
+//rolo compressor
+//Achatar uma matriz aninhada. Você deve considerar vários níveis de aninhamento.
+
+function steamrollArray(arr) {
+  const flattenedArray = [];
+  // Loop over array contents
+  for (let i = 0; i < arr.length; i++) {
+    if (Array.isArray(arr[i])) {
+      // Recursively flatten entries that are arrays
+      //  and push into the flattenedArray
+      flattenedArray.push(...steamrollArray(arr[i]));
+    } else {
+      // Copy contents that are not arrays
+      flattenedArray.push(arr[i]);
+    }
+  }
+  return flattenedArray;
+};
+
+//Agentes Binários
+/* Retorna uma sentença traduzida em inglês da string binária passada.
+
+A string binária será separada por espaço. */
+
+function binaryAgent(str) {
+  var biString = str.split(" ");
+  var uniString = [];
+
+  /*using the radix (or base) parameter in parseInt, we can convert the binary
+      number to a decimal number while simultaneously converting to a char*/
+
+  for (var i = 0; i < biString.length; i++) {
+    uniString.push(String.fromCharCode(parseInt(biString[i], 2)));
+  }
+
+  // we then simply join the string
+  return uniString.join("");
+}
+
+// test here
+binaryAgent(
+  "01000001 01110010 01100101 01101110 00100111 01110100 00100000 01100010 01101111 01101110 01100110 01101001 01110010 01100101 01110011 00100000 01100110 01110101 01101110 00100001 00111111"
+);
+
+//Tudo seja verdade
+//Verifique se o predicado (segundo argumento) é verdadeiro em todos os elementos de uma coleção (primeiro argumento).
+function truthCheck(collection, pre) {
+  // Create a counter to check how many are true.
+  var counter = 0;
+  // Check for each object
+  for (var c in collection) {
+    // If it is has property and value is truthy
+    if (collection[c].hasOwnProperty(pre) && Boolean(collection[c][pre])) {
+      counter++;
+    }
+  }
+  // Outside the loop, check to see if we got true for all of them and return true or false
+  return counter == collection.length;
+}
+
+// test here
+truthCheck(
+  [
+    { user: "Tinky-Winky", sex: "male" },
+    { user: "Dipsy", sex: "male" },
+    { user: "Laa-Laa", sex: "female" },
+    { user: "Po", sex: "female" }
+  ],
+  "sex"
+);
+
+//Argumentos Opcional
+//Crie uma função que some dois argumentos. Se apenas um argumento for fornecido, retorne uma função que espera um argumento e retorna a soma.
+
+function addTogether() {
+  const [first, second] = arguments;
+  if (typeof(first) !== "number")
+    return undefined;
+  if (second === undefined)
+    return (second) => addTogether(first, second);
+  if (typeof(second) !== "number")
+    return undefined;
+  return first + second;
+}
+
+console.log(addTogether(2)(5));
+//Faça uma pessoa
+//Preencha o construtor de objeto com os seguintes métodos abaixo:  
+
+const Person = function(firstAndLast) {
+  // Only change code below this line
+  
+
+  // Complete the method below and implement the others similarly
+  this.getFullName = function() {
+    return "";
+  };
+  return firstAndLast;
+};
+
+const bob = new Person('Bob Ross');
+bob.getFullName();
