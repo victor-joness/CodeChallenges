@@ -9,7 +9,8 @@ Neste repositóio armazenarei os códigos dos desafios resolvidos que tem como o
        -> Algoritmos JavaScript e Estruturas de Dados ✅                                                                                     
        -> Bibliotecas de desenvolvimento front-end                                                                                         
   - [GabiCode](https://discord.gg/Yw3n67Z9Yk):                                                                      
-       -> Desafio 01 - IpCats ✅                                                                                                     
+       -> Desafio 01 - IpCats ✅                                         
+       -> Desafio 02 - Anywhere app                                                
   - [Frontloops Challenges](https://frontloopschallenges.netlify.app/): 
   - [He4rtlabs Challenges](https://discord.io/he4rt):                                                     
        ->Calculadora de hora p/ Freelance	Front-End	Iniciante                                                              
