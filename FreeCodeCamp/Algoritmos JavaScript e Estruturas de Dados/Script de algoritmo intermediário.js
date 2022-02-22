@@ -504,5 +504,3 @@ function orbitalPeriod(arr) {
 
   return newArr;
 }
-
-//
