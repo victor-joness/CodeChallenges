@@ -18,7 +18,7 @@ Se gostou da ideia acompanhe os projetos abaixo:
     </td>
       <td>
         <h3>01 - Lâmpada</h3>
-        <li><a href="">Código</a></li>
+        <li><a href="https://github.com/victor-joness/CodeChallenges/tree/main/Fernando%20Leonid%20-%20Challenger/01-Lampada%20em%20Js">Código</a></li>
         <li><a href="https://youtu.be/4r0zOW9Zn-Y">Passo a passo</a></li>
         <a href="https://github.com/victor-joness/CodeChallenges/tree/main/Fernando%20Leonid%20-%20Challenger/01-Lampada%20em%20Js"><img src="./img/01-lamp.gif" width="250px"></a>
     </td>
