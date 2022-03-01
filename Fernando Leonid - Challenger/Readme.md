@@ -14,7 +14,7 @@ Se gostou da ideia acompanhe os projetos abaixo:
         <h3>00 - Calculadora IMC</h3>
         <li><a href="">Código</a></li>
         <li><a href="https://youtu.be/RacwEvoTz_Y">Passo a passo</a></li>
-        <a href="https://fernandoleonid.github.io/mini-projetos-js/00-imc/"><img src="./img/00-imc.gif" width="250px"></a>
+        <a href=""><img src="./img/00-imc.gif" width="250px"></a>
     </td>
       <td>
         <h3>01 - Lâmpada</h3>
