@@ -94,7 +94,7 @@ Se gostou da ideia acompanhe os projetos abaixo:
       <h3>12 - Calculadora Binaria</h3>
       <li><a href="./06-Calculadora/">Código</a></li>
       <li><a href="https://youtu.be/oRZQ5EZOrQk">Passo a passo</a></li>
-      <a href="https://github.com/victor-joness/CodeChallenges/tree/main/Fernando%20Leonid%20-%20Challenger/12-Binary-Calculator/binary/"><img src="./img/12-Calculadora-Binaria.gif" width="250px" ></a>
+      <a href="https://github.com/victor-joness/CodeChallenges/tree/main/Fernando%20Leonid%20-%20Challenger/12-Binary-Calculator/binary/"><img src="./img/12-Calculadora-binaria.gif" width="250px"></a>
     </td>
     <td>
       <h3>07 - To-do-list</h3>
