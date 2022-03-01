@@ -20,7 +20,7 @@ Se gostou da ideia acompanhe os projetos abaixo:
         <h3>01 - Lâmpada</h3>
         <li><a href="">Código</a></li>
         <li><a href="https://youtu.be/4r0zOW9Zn-Y">Passo a passo</a></li>
-        <a href="https://fernandoleonid.github.io/mini-projetos-js/01-lamp/"><img src="./img/01-lamp.gif" width="250px"></a>
+        <a href="https://github.com/victor-joness/CodeChallenges/tree/main/Fernando%20Leonid%20-%20Challenger/01-Lampada%20em%20Js"><img src="./img/01-lamp.gif" width="250px"></a>
     </td>
     <td>
       <h3>02 - Semáforo</h3>
