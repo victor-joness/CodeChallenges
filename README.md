@@ -17,7 +17,9 @@ Neste repositóio armazenarei os códigos dos desafios resolvidos que tem como o
        ->Planilha de cotação p/ Freelance	Front-End	Iniciante                                                               
        ->Formulário Único login and signup                      
   - [Cod3r]():                                                                                 
-       ->40 desafios de JavaScript: Fundamentos, estruturas de controle e funções. 
+       ->40 desafios de JavaScript: Fundamentos, estruturas de controle e funções. ✅
   - [Fernando Leonid](https://www.youtube.com/c/FernandoLeonid):                                                  
-       -> 12 projetos práticos de HTML, CSS e JS                                                   
+       -> 12 projetos práticos de HTML, CSS e JS                                                    
+  - [Milena Carecho](https://github.com/MilenaCarecho/30diasDeCSS):                                                                              
+       -> 30 dias de Css                                                                               
   
