@@ -26,15 +26,15 @@ Se gostou da ideia acompanhe os projetos abaixo:
       <h3>02 - Semáforo</h3>
       <li><a href="">Código</a></li>
       <li><a href="https://youtu.be/EujFSEsZsk4">Passo a passo</a></li>
-      <a href="https://fernandoleonid.github.io/mini-projetos-js/02-semaforo/"><img src="./img/02-semaforo.gif" width="250px" ></a>
+      <a href=""><img src="./img/02-semáfoto.gif" width="250px" ></a>
     </td>
   </tr>
   <tr>
     <td>
       <h3>03 - Slide Show</h3>
-      <li><a href="./03-slideshow/">Código</a></li>
+      <li><a href="">Código</a></li>
       <li><a href="https://youtu.be/csNYVAS2ex8">Passo a passo</a></li>
-      <a href="https://fernandoleonid.github.io/mini-projetos-js/03-slideshow/"><img src="./img/03-slideshow.gif" width="250px" ></a>
+      <a href=""><img src="./img/03-slideshow.gif" width="250px" ></a>
     </td>
     <td>
       <h3>04 - Drum-kit</h3>
