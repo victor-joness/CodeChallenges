@@ -44,9 +44,9 @@ Se gostou da ideia acompanhe os projetos abaixo:
     </td>
     <td>
       <h3>05 - CountDown</h3>
-      <li><a href="./05-countdown/">Código</a></li>
+      <li><a href="">Código</a></li>
       <li><a href="https://youtu.be/nmWrwFjiCvo">Passo a passo</a></li>
-      <a href="https://fernandoleonid.github.io/mini-projetos-js/05-countdown/"><img src="./img/05-countdown.gif" width="250px" ></a>
+      <a href=""><img src="./img/05-countdown.gif" width="250px" ></a>
     </td>
   </tr>
   <tr>
