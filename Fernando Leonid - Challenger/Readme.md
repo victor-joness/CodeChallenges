@@ -52,9 +52,9 @@ Se gostou da ideia acompanhe os projetos abaixo:
   <tr>
     <td>
       <h3>06 - Calculadora</h3>
-      <li><a href="./06-Calculadora/">Código</a></li>
+      <li><a href="">Código</a></li>
       <li><a href="https://youtu.be/oRZQ5EZOrQk">Passo a passo</a></li>
-      <a href="https://fernandoleonid.github.io/mini-projetos-js/06-Calculadora/"><img src="./img/06-Calculadora.gif" width="250px" ></a>
+      <a href=""><img src="./img/06-Calculadora.gif" width="250px" ></a>
     </td>
     <td>
       <h3>07 - To-do-list</h3>
