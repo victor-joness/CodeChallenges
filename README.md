@@ -21,5 +21,8 @@ Neste repositóio armazenarei os códigos dos desafios resolvidos que tem como o
   - [Fernando Leonid](https://www.youtube.com/c/FernandoLeonid):                                                  
        -> 12 projetos práticos de HTML, CSS e JS                                                    
   - [Milena Carecho](https://github.com/MilenaCarecho/30diasDeCSS):                                                                              
-       -> 30 dias de Css                                                                               
+       -> 30 dias de Css    
+  - [Exercism](https://exercism.org):                                                           
+       -> Track TypeScript 94 Challenger                                                        
+       -> Track Javascript 139 Challenger                                                       
   
