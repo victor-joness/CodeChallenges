@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300&display=swap');
+
+:root{
+    --yellow: rgb(255, 230, 0);
+}
+
+*{
+    font-family: 'Nunito', sans-serif;
+    padding: 0; margin: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-padding-top: 7rem;
+    overflow-x: hidden;
+}
+
+.main{
+    display: flex;
+    margin:20rem auto;
+    align-items: center;
+    flex-direction: column;
+    width: 50rem;
+    height: 50rem;
+    background: var(--yellow);
+    border: .2rem solid rgba(0,0,0.1);
+    box-shadow: .5rem .5rem rgba(0,0,0.1);
+    border-radius: 5%;
+}
+
+.btn{
+    height: 5rem;
+    width: 40rem;
+    background: #000;
+    color: #fff;
+    font-size: 3rem;
+    text-align: center;
+    line-height: 5rem;
+    border-radius: .5rem;
+    font-weight: bolder;
+    margin-top: 2rem;
+}
+
+.btn:hover{
+    color: var(--yellow);
+    letter-spacing: .02rem;
+}
+
+.main h1{
+    padding: 1rem;
+    font-size: 4rem;
+}
+
+.main .linha{
+    width: 50rem;
+    height: .1rem;
+    border: .2rem solid rgb(0, 0, 0);
+}
+
+.main .infos p{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    padding: 1.5rem;
+}
+
+.main .infos input{
+    height: 4rem;
+    font-size: 2rem;
+    border-radius: .5rem;
+}
+
+.main .infos .nome{
+    margin-left: 2rem;
+}
+
+.main .infos .altura{
+    margin-left: 1.6rem;
+}
+
+.main .infos .peso{
+    margin-left: 3.35rem;
+}
+
+.main .resposta{
+    height: 10rem;
+    width: 40rem;
+    background: #000;
+    margin-top: 2rem;
+    border-radius: .5rem;
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+    padding: 2rem;
+}
