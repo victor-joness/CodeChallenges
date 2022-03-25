@@ -30,5 +30,12 @@ Neste repositóio armazenarei os códigos dos desafios resolvidos que tem como o
        -> 30 dias de Css    
   - [Exercism](https://exercism.org):                                                           
        -> Track TypeScript 94 Challenger                                                        
+<<<<<<< Updated upstream
        -> Track Javascript 139 Challenger                                                       
   
+=======
+       -> Track Javascript 139 Challenger   
+  - [JavaScript30](https://javascript30.com/):
+       -> 30 dias de Javascript                                                 
+  
+>>>>>>> Stashed changes
