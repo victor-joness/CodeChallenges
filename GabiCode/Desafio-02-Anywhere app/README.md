@@ -7,4 +7,4 @@ Neste repositóio armazenarei o código do desafio resolvido que tem como objeti
        -> Front-end: https://dribbble.com/shots/16753965-Login-Sign-up-Dark-Mode-AW-Universal-Page                                                        
        -> No ar: 🚧                                                                
        -> status: Finished ✔️                                                        
-       -> Responsive: ❌                                                                                   
+       -> Responsive: ✔️                                                                                   
