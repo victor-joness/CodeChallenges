@@ -12,17 +12,15 @@
 Neste repositóio armazenarei os códigos dos desafios resolvidos que tem como objetivo aperfeiçoar minha logica de programação e também aprender novas tecnologias
 
 ## Sites dos desafios:
-- [101 Exercícios em JavaScript](https://github.com/lakscastro/101-daily-codes): 
-    (Português)
-    ->Ttabela com tempo e nome e link do desafio
-    ->Fazendo 101 desafios de Javascript e Typescript em 101 dias (ou menos);
-    ->Sem frameworks, sem compiladores, sem bibliotecas, sem templates.
-    (English)
-    ->Table with time and challenge name and link
-    ->Build 101 Challenger in 101 days
-    ->No Frameworks×No Compilers×No Libraries×No Boilerplate
-
-
+- [101 Exercícios em JavaScript](https://github.com/lakscastro/101-daily-codes):                                            
+    (Português)                                                                   
+    ->Ttabela com tempo e nome e link do desafio                                                   
+    ->Fazendo 101 desafios de Javascript e Typescript em 101 dias (ou menos);                                             
+    ->Sem frameworks, sem compiladores, sem bibliotecas, sem templates.                                        
+    (English)                                               
+    ->Table with time and challenge name and link                                                                                     
+    ->Build 101 Challenger in 101 days                                                                      
+    ->No Frameworks×No Compilers×No Libraries×No Boilerplate                                           
 ## Sobre
 
 Apenas alguns exercícios resolvidos utilizando JavaScript, exercícios estes, retirados da plataforma [URI Online](https://www.urionlinejudge.com.br/). Um exercício será postado por dia. 
