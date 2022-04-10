@@ -1,6 +1,6 @@
 <p align="center">
-  <img src="./assets/logo.png" width="150" />
-  <img src="./assets/typescript.png" width="150" />
+  <img src="./" width="150" />
+  <img src="./" width="150" />
 </p>
 <p align="center">⭐⭐⭐⭐⭐</p>
 <h1 align="center">101 Exercícios em JavaScript</h1>
@@ -9,7 +9,7 @@
 
 # CodeChallenges
 
-Neste repositóio armazenarei os códigos dos desafios resolvidos que tem como objetivo aperfeiçoar minha logica de programação e também aprender novas tecnologias
+Neste repositóio armazenarei os códigos dos desafios resolvidos que tem como objetivo aperfeiçoar minha logica de programação e também aprender novas tecnologias e alem disse cada arquivo terá uma breve explicação que expõe a lógica e o passo a passo que utilizei pra resolver o exercício.
 
 ## Sites dos desafios:
 - [101 Exercícios em JavaScript](https://github.com/lakscastro/101-daily-codes):                                            
@@ -21,14 +21,7 @@ Neste repositóio armazenarei os códigos dos desafios resolvidos que tem como o
     ->Table with time and challenge name and link                                                                                     
     ->Build 101 Challenger in 101 days                                                                      
     ->No Frameworks×No Compilers×No Libraries×No Boilerplate                                           
-## Sobre
-
-Apenas alguns exercícios resolvidos utilizando JavaScript, exercícios estes, retirados da plataforma [URI Online](https://www.urionlinejudge.com.br/). Um exercício será postado por dia. 
-Nota: este repostório não mostra a resposta, e sim expõe a lógica e o passo a passo que utilizei pra resolver o exercício. O repositório que contém as respostas líquidas [é este](link)
-
-## Get Started
-Utilizo o programa RunJs para resolver qualquer exercício ou realizar testes em Js, e você pode fazer o download na [página oficial.](https://runjs.dev/)
-
+    
 ## Nota
 Viu um código e tem uma solução melhor? É só dar clonar o repositório, fazer suas alterações e enviar uma `pull request` :)
 
