@@ -1,6 +1,6 @@
 <p align="center">
-  <img src="./" width="150" />
-  <img src="./" width="150" />
+  <img src="" width="150" />
+  <img src="./logo.png" width="150" />
 </p>
 <p align="center">⭐⭐⭐⭐⭐</p>
 <h1 align="center">101 Exercícios em JavaScript</h1>
