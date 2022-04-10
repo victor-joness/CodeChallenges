@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="" width="150" />
+  <img src="./typescript.png" width="150" />
   <img src="./logo.png" width="150" />
 </p>
 <p align="center">⭐⭐⭐⭐⭐</p>
