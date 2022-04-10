@@ -3,7 +3,7 @@
   <img src="./logo.png" width="150" />
 </p>
 <p align="center">⭐⭐⭐⭐⭐</p>
-<h1 align="center">101 Exercícios em JavaScript</h1>
+<h1 align="center">101 Exercícios em TypeScript e JavaScript</h1>
 <p align="center">101 exercícios em 101 dias, utilizando exercícios da plataforma URI Online</p>
 
 
@@ -14,7 +14,7 @@ Neste repositóio armazenarei os códigos dos desafios resolvidos que tem como o
 ## Sites dos desafios:
 - [101 Exercícios em JavaScript](https://github.com/lakscastro/101-daily-codes):                                            
     (Português)                                                                   
-    ->Ttabela com tempo e nome e link do desafio                                                   
+    ->Tabela com tempo e nome e link do desafio                                                   
     ->Fazendo 101 desafios de Javascript e Typescript em 101 dias (ou menos);                                             
     ->Sem frameworks, sem compiladores, sem bibliotecas, sem templates.                                        
     (English)                                               
