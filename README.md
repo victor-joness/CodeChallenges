@@ -29,8 +29,8 @@ Neste repositóio armazenarei os códigos dos desafios resolvidos que tem como o
   - [Milena Carecho](https://github.com/MilenaCarecho/30diasDeCSS):                                                                              
        -> 30 dias de Css    
   - [Exercism](https://exercism.org):                                                           
-       -> Track TypeScript 94 Challenger                                                        
-       -> Track Javascript 139 Challenger                                                                                                     
+       -> Track TypeScript 94 Challenger, Nivel: Dificil;                                                   
+       -> Track Javascript 139 Challenger, Nivel: Dificil;                                                                                                    
   - [JavaScript30](https://javascript30.com/):                                                   
        -> 30 dias de Javascript, Nivel: Iniciante; 
   - [101 days Javascript and Typescripr](https://www.beecrowd.com.br/judge/en/login):                                                                     
