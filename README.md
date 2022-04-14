@@ -31,5 +31,7 @@ Neste repositóio armazenarei os códigos dos desafios resolvidos que tem como o
   - [Exercism](https://exercism.org):                                                           
        -> Track TypeScript 94 Challenger                                                        
        -> Track Javascript 139 Challenger                                                                                                     
-  - [JavaScript30](https://javascript30.com/):
-       -> 30 dias de Javascript                                                 
+  - [JavaScript30](https://javascript30.com/):                                                   
+       -> 30 dias de Javascript 
+  - [101 days Javascript and Typescripr]():                                                                     
+       -> 101 dias de Javascript e Typescript, Nivel: intermediario;                                           
