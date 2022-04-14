@@ -32,6 +32,6 @@ Neste repositóio armazenarei os códigos dos desafios resolvidos que tem como o
        -> Track TypeScript 94 Challenger                                                        
        -> Track Javascript 139 Challenger                                                                                                     
   - [JavaScript30](https://javascript30.com/):                                                   
-       -> 30 dias de Javascript 
+       -> 30 dias de Javascript, Nivel: Iniciante; 
   - [101 days Javascript and Typescripr](https://www.beecrowd.com.br/judge/en/login):                                                                     
        -> 101 dias de Javascript e Typescript, Nivel: intermediario;                                           
