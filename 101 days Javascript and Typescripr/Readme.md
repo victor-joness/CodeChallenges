@@ -12,7 +12,7 @@
 Neste repositóio armazenarei os códigos dos desafios resolvidos que tem como objetivo aperfeiçoar minha logica de programação e também aprender novas tecnologias e alem disse cada arquivo terá uma breve explicação que expõe a lógica e o passo a passo que utilizei pra resolver o exercício.
 
 ## Sites dos desafios:
-- [101 Exercícios em JavaScript](https://github.com/lakscastro/101-daily-codes):                                            
+- [101 Exercícios em JavaScript](https://www.beecrowd.com.br/judge/en/login):                                            
     (Português)                                                                   
     ->Tabela com tempo e nome e link do desafio                                                   
     ->Fazendo 101 desafios de Javascript e Typescript em 101 dias (ou menos);                                             
