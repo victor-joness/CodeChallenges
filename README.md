@@ -23,19 +23,15 @@ Neste repositóio armazenarei os códigos dos desafios resolvidos que tem como o
        ->Planilha de cotação p/ Freelance	Front-End	Iniciante                                                               
        ->Formulário Único login and signup                      
   - [Cod3r]():                                                                                 
-       ->40 desafios de JavaScript: Fundamentos, estruturas de controle e funções. ✅
+       ->70 desafios de JavaScript: Fundamentos, estruturas de controle e funções, arrays, objetos. ✅
   - [Fernando Leonid](https://www.youtube.com/c/FernandoLeonid):                                                  
        -> 12 projetos práticos de HTML, CSS e JS                                                    
   - [Milena Carecho](https://github.com/MilenaCarecho/30diasDeCSS):                                                                              
        -> 30 dias de Css    
   - [Exercism](https://exercism.org):                                                           
-       -> Track TypeScript 94 Challenger                                                        
-<<<<<<< Updated upstream
-       -> Track Javascript 139 Challenger                                                       
-  
-=======
-       -> Track Javascript 139 Challenger   
-  - [JavaScript30](https://javascript30.com/):
-       -> 30 dias de Javascript                                                 
-  
->>>>>>> Stashed changes
+       -> Track TypeScript 94 Challenger, Nivel: Dificil;                                                   
+       -> Track Javascript 139 Challenger, Nivel: Dificil;                                                                                                    
+  - [JavaScript30](https://javascript30.com/):                                                   
+       -> 30 dias de Javascript, Nivel: Iniciante; 
+  - [101 days Javascript and Typescripr](https://www.beecrowd.com.br/judge/en/login):                                                                     
+       -> 101 dias de Javascript e Typescript, Nivel: intermediario;                                           
