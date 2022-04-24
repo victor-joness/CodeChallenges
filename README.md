@@ -7,8 +7,8 @@ Neste repositóio armazenarei os códigos dos desafios resolvidos que tem como o
        -> 10 Days of JS ✅                                                   
        -> 1 Week Preparation Kit                                                                     
        -> 1 Month Preparation Kit                                               
-       -> 3 Months Preparation Kit 
-       -> Problem Solving
+       -> 3 Months Preparation Kit                                                 
+       -> Problem Solving                                          
   - [freeCodeCamp](https://www.freecodecamp.org/learn):                                                                                  
        -> Algoritmos JavaScript e Estruturas de Dados ✅                                                                                     
        -> Bibliotecas de desenvolvimento front-end                                                                                         
