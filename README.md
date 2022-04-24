@@ -4,7 +4,8 @@ Neste repositóio armazenarei os códigos dos desafios resolvidos que tem como o
 
 ## Sites dos desafios:
   - [HackerRank](https://www.hackerrank.com/dashboard):                                                    
-       -> 10 Days of JS ✅    
+       -> 10 Days of JS ✅
+       -> 1 Week Preparation Kit                              
        -> 1 Month Preparation Kit                                               
        -> 3 Months Preparation Kit 
        -> Problem Solving
