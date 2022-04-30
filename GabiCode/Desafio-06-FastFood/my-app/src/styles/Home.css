@@ -1,0 +1,367 @@
+@import url(./index.css);
+
+.App{
+    background: rgb(230, 229, 229);
+    height: 93.7rem;
+    width: 100%;
+    padding: 5rem 5%;
+}
+
+.App .main{
+    background: #fff;
+    height: 83rem;
+    border-radius: 2rem;
+    z-index: 1000;
+}
+
+.App .main .navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 5rem 5%;
+    margin-left: 3rem;
+}
+
+.App .main .navbar .image{
+    margin-left: 2rem;
+    display: flex;
+    width: 6rem;
+    height: 6rem;
+    line-height: 6rem;
+}
+
+.App .main .navbar .image img{
+    height: 100%;
+    width: 100%;
+}
+
+.App .main .navbar .image h1{
+    margin-left: 2rem;
+    font-size: 4rem;
+    font-weight: bolder;
+}
+
+.App .main .navbar .options{
+    display: flex;
+    justify-content: center;
+}
+
+.App .main .navbar .options a{
+    margin: 0 3rem;
+    font-size: 2rem;
+    color: #666;
+    font-weight: bold;
+    line-height: 6rem;
+}
+
+.App .main .navbar .options a:hover{
+    color: #000;    
+}
+
+.App .main .navbar .options .nav .search{
+    display: flex;
+    border: .1rem solid #666;
+    border-radius: 50rem;
+    height: 4rem;
+    line-height: 6rem;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.App .main .navbar .options .nav{
+    display: flex;
+}
+
+.App .main .navbar .options .nav .search .icon{
+    font-size: 1.5rem;
+    margin-top: 1.2rem;
+    margin-left: 1rem;  
+}
+
+.App .main .navbar .options .nav .search::placeholder{
+    color: #000;
+    font-weight: bolder;
+}
+
+.App .main .navbar .options .nav .search input{
+    border: none;
+    height: 100%;
+    padding: 1.5rem;
+    font-size: 2rem;
+    margin-top: 0rem;
+}
+
+.App .main .navbar .menu-bars{
+    display: none;
+    cursor: pointer;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 4.5rem;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    background: rgb(194, 193, 193);
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.App .main .navbar .cesta{
+    cursor: pointer;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 4.5rem;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    background: rgb(194, 193, 193);
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+/* home section */
+
+.App .main .home{
+    display: flex;
+    padding: 0rem 5%;
+    justify-content: space-between;
+}
+
+.App .main .home .esquerda{
+    display: flex;
+    flex-direction: column;
+    width: 50rem;
+    margin-left: 5rem;
+}
+
+.App .main .home .esquerda a:first-of-type{
+    width: 15rem;
+    border-radius: 5rem;
+    text-align: center;
+    line-height: 4rem;
+    height: 4rem;
+    box-shadow: var(--box-shadow);
+    font-size: 2rem;
+    color: orange;
+    font-weight: bolder;
+    background: rgb(255, 255, 255);
+}
+
+.App .main .home .esquerda h1{
+    margin-top: 2rem;
+    font-size: 4rem;
+    font-weight: bolder;
+}
+
+.App .main .home .esquerda h1 span{
+    color: orange;
+}
+
+.App .main .home .esquerda h2{
+    color: #666;
+    font-size: 2rem;
+}
+
+.App .main .home .esquerda .buttons{
+    display: flex;
+}
+
+.App .main .home .esquerda .buttons .primeiro{
+    margin-top: 2rem;
+    background: rgb(0, 19, 105);
+    border-radius: .5rem;
+    color: #fff;
+}
+
+.App .main .home .esquerda .buttons .segundo{
+    width: 15rem;
+    margin-top: 2rem;
+    border-radius: .5rem;
+    text-align: center;
+    line-height: 4rem;
+    height: 4rem;
+    box-shadow: var(--box-shadow);
+    font-size: 2rem;
+    color: orange;
+    font-weight: bolder;
+    background: rgb(255, 255, 255);
+    margin-left: 3rem;
+}
+
+.App .main .home .esquerda .footer .mini-chef {
+    margin-top: 2rem;
+    display: flex;
+}
+
+.App .main .home .esquerda .footer .mini-chef span{
+    color: orange;
+    font-size: 5rem;
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+
+.App .main .home .esquerda .footer .mini-chef h2{
+    margin-left: 2rem;
+    margin-top: 3rem;
+}
+
+
+.App .main .home .esquerda .footer .mini-chef .image {
+    height: 10rem;
+    width: 10rem;
+}
+
+.App .main .home .esquerda .footer .mini-chef .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.App .main .home .esquerda .footer .credit{
+    width: 50rem;
+}
+
+.App .main .home .esquerda .footer .credit h1{
+    font-size: 2rem;
+}
+
+
+.App .main .home .direita .container{
+    height: 50rem;
+    width: 50rem;
+}
+
+.App .main .home .direita .container img{
+    height: 100%;
+    width: 100%;
+    border-radius: 1rem;
+}
+
+
+
+
+
+
+
+
+@media(max-width:1250px){
+    .App{
+        height: auto;
+    }
+
+    .App .main{
+        height: auto;
+    }
+
+    .App .main .home .direita .container{
+        margin: 2rem auto 0 auto;
+        height: 40rem;
+        width: 50rem;
+        margin-bottom: 4rem;
+    }
+
+    .App .main .home .esquerda{
+        margin: 2rem auto 0 auto;
+    }
+
+    .App .main .navbar .options .nav{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        position: absolute;
+        top:9%; left:0; right:0;
+        
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    .App .main .navbar .options .nav a:first-child{
+        border-top: .1rem solid #222;
+    }
+
+    .App .main .navbar .options .nav .search {
+        justify-content: start;
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+    
+    .App .main .navbar .options .nav.active{
+        margin-top: 10rem;
+        padding: 0 5%;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    .App .main .navbar .menu-bars{
+        display: initial;
+    }
+
+    .App .main .navbar .options .nav .search input{
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .App .main .home {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .App .main .home.active{
+        margin-top: 30rem;
+    }
+
+    .App .main .home .esquerda .footer .credit{
+        text-align: center;
+        width: auto;
+    }
+}
+
+@media(max-width:620px){
+    html{
+        font-size: 55%;
+    }
+}
+
+@media(max-width:550px){
+    html{
+        font-size: 50%;
+    }
+
+    .App .main .navbar{
+        margin-left: 1rem;
+    }
+
+    .App .main .navbar .image h1{
+        margin-left: 1rem;
+    }
+
+
+    .App .main .navbar .image {
+        margin-left: 0;
+    }
+
+    .App .main .navbar .options .nav .search input {
+        margin-left: 0;
+        padding: 1rem;
+    }
+}
+
+@media(max-width:500px){
+    .App .main .home .esquerda{
+        width: auto;
+        margin: 0;
+    }
+
+    .App .main .home .esquerda h2{
+        width: auto;
+    }
+
+    .App .main .home .esquerda a{
+        width: auto;
+    }
+
+
+    .App .main .home .direita .container{
+        margin: 2rem auto 0 auto;
+        margin-bottom: 3rem;
+        height: 40rem;
+        width: auto;
+    }
+}
