@@ -19,10 +19,19 @@
     state e props atuais : eles podem ser assincronas, então podem guarda valores antigos, e as vezes não queremos isso.
     entrada controlada : geralmente entrada de texto = input ou textArea, onde fazemos de um modo que o proprio react vai controlar esses input, e a partir disso podemos fazer qualquer coisa que queremos.
     dados unidirecionais : ao inves de ficar criando varios state, criamoss apenas 1 principal e vamos distribuino os dados atraves de props, onde os filhos herdam.
-    metodos de clico de vida ou hooks de ciclo de vida : 
+    metodos de clico de vida ou hooks de ciclo de vida : shouldComponentUpdate, componentDidUpdate
+    componentDidUpdate : é o melhor lugar para anexar qualquer ouvinte de evento que você precise adicionar para uma funcionalidade específica, por exemplo uma chamada a api;
+    shouldComponentUpdate : define se vc quer ele seja renderizado novamente ou não, por padrao todo valor que muda em reacrt é renderizado a cada vez que muda
+    style inline : usamos camelCase e usamos o style como se fosse um objet em JS.
+    constantes como css : podemos usar constantes, como se fossem object em js, a partir disso usamos o object no styles tag, observer que o styles tag só aceita object
+    if/else dentro do render : podemos usar if/else dentro do render metodo, isso serve para renderizar coisas diferentes, por exemplo logado == true ou logado == false renderiza diferentes coisas.
+    && condition dentro do JSX : {this.state.display && <h1>Displayed</h1>}, com isso ele só vai renderizar o h1 caso o state seja true.
+    operador ternario : usado dentro do return, ele pode ser aninhado e verificar quando condições a gente quiser.
+    object js como css : muda css atraves de const js usada como object, podemos fazer tudo de js com isso, ex length value etc.
+    no render podemos retorna map(HTML)
+    Quando você cria uma matriz de elementos, cada um precisa de um key atributo definido para um valor exclusivo. {podemos fazer isso com map, definindo uma <li key={valor}>}
+    aprendemos o metodo filter nas matrizes
 */  
-
-
 
 //comentarios mais detalhados das questões
 
@@ -39,8 +48,8 @@
   <p></p>
   <ul>
     <li></li>
-    <li></li>
-    <li></li>  
+    <li></li>   
+    <li></li> 
   </ul>
 </div> */}
 
@@ -788,14 +797,400 @@ class Controller extends React.Component {
 */
 
 //36 questao
+//Apresentando Estilos Inline
+//Existem outros conceitos complexos que adicionam recursos poderosos ao seu código React. Mas você pode estar se perguntando sobre o problema mais simples de como estilizar esses elementos JSX que você cria no React. 
+//voce pode fazer igual com html, só que com ClassName
+//Você aplica estilos embutidos a elementos JSX de forma semelhante a como faz em HTML, mas com algumas diferenças de JSX. Aqui está um exemplo de um estilo inline em HTML:
+// <div style="color: yellow; font-size: 16px">Mellow Yellow</div>
+//em react funciona da mesma forma, so que como javascript pela forma que ele compila o codigo
+// Em vez disso, você o define igual a um JavaScript object.
+//<div style={{color: "yellow", fontSize: 16}}>Mellow Yellow</div>
+//lembre-se que o react é todo camelCase.
+
 //37 questao
+// Palavras hifenizadas como font-sizesão sintaxe inválida para propriedades de objeto JavaScript, então o React usa maiúsculas e minúsculas.
+//Como regra, quaisquer propriedades de estilo hifenizadas são escritas usando maiúsculas e minúsculas em JSX.
+//por padrao o font-size usado é em px, mais se vc quer usar em ou rem, essses valores devem ser colocados entre parenteses.
+//{fontSize: "4em"}
+//Se você tiver um grande conjunto de estilos, poderá atribuir um estilo objecta uma constante para manter seu código organizado.
+//Declare seus estilos constantes como uma variável global na parte superior do arquivo.
+//inicialize styles a constante e atribua an objectcom três propriedades de estilo e seus valores a ela. 
+//com isso podemos organizar melhor nosso codigo, e reaproveitar os css.
+/* 
+// Change code above this line
+const styles = {
+  color: "purple",
+  fontSize : 40,
+  border: "2px solid purple"
+}
+
+class Colorful extends React.Component {
+  render() {
+    // Change code below this line
+    return (
+      <div style={{color: "purple", fontSize: 40, border: "2px solid purple"}}>Style Me!</div>
+    );
+    // Change code above this line
+  }
+};
+//com variavel.
+class Colorful extends React.Component {
+  render() {
+    // Change code below this line
+    return (
+      <div style={styles}>Style Me!</div>
+    );
+    // Change code above this line
+  }
+};
+*/
+
 //38 questao
+//até agora sempre usamos {} para injetar javascript no JSX, mas não são a única maneira de utilizar o código JavaScript em seus componentes React.
+//Você também pode escrever JavaScript diretamente em seus rendermétodos, antes da returninstrução,sem inseri-lo entre chaves.
+//Isso ocorre porque ainda não está dentro do código JSX. 
+//Quando quiser usar uma variável posteriormente no código JSX dentro da returninstrução, coloque o nome da variável entre chaves.
+//fizemos uma questao que aperta o button, ele gra um numero aleatorio de 0 a 20, e depois eu pego esse state e passo pro array, qu eme retorna uma frase de acrodo com a posução do array.
+
 //39 questao
+//Renderizar com uma condição If-Else
+//podemos usar if/else no render metodo, então, if(){return a}else{return b}, com isso temos diferentes renderizações.
+//MyComponent contém um booleanem seu estado que rastreia se você deseja exibir algum elemento na interface do usuário ou não, O buttonalterna o estado desse valor. 
+/* 
+class MyComponent extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      display: true
+    }
+    this.toggleDisplay = this.toggleDisplay.bind(this);
+  }
+  toggleDisplay() {
+    this.setState((state) => ({
+      display: !state.display
+    }));
+  }
+  render() {
+    // Change code below this line
+
+    if(this.state.display == true){
+      return (
+       <div>
+         <button onClick={this.toggleDisplay}>Toggle Display</button>
+         <h1>Displayed!</h1>
+       </div>
+    );
+    }else{
+      return (
+       <div>
+         <button onClick={this.toggleDisplay}>Toggle Display</button>
+       </div>
+    );
+    }
+  }
+};
+*/
+
 //40 questao
+//Use && para uma condicional mais concisa
+//As if/elsedeclarações funcionaram no último desafio, mas há uma maneira mais concisa de obter o mesmo resultado.
+// Imagine que você está rastreando várias condições em um componente e deseja que diferentes elementos sejam renderizados dependendo de cada uma dessas condições
+//Em vez disso, você pode usar o &&operador lógico para executar a lógica condicional de maneira mais concisa. Isso é possível porque você deseja verificar se uma condição é true, e se for, retornar alguma marcação. Aqui está um exemplo:
+//{condition && <p>markup</p>}
+//Se conditionfor true, a marcação será retornada.
+//Você pode incluir essas instruções diretamente em seu JSX e agrupar várias condições escrevendo &&após cada uma. Isso permite que você manipule uma lógica condicional mais complexa em seu render()método sem repetir muito código.
+
+//observe que não precisamos usar o == true pq já é padrao se for true ele vai renderizar, isso serve MUITO, quando queremos renderizar pequenos componentes / coisas, agiora quando for pra mudar a tela inteira o if;else pode ser melhro.
+
+/* 
+class MyComponent extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      display: true
+    }
+    this.toggleDisplay = this.toggleDisplay.bind(this);
+  }
+  toggleDisplay() {
+    this.setState(state => ({
+      display: !state.display
+    }));
+  }
+  render() {
+    // Change code below this line
+    return (
+       <div>
+         <button onClick={this.toggleDisplay}>Toggle Display</button>
+         {this.state.display && <h1>Displayed</h1>}
+       </div>
+    );
+  }
+};
+*/
+
 //41 questao
+//: o operador ternário, é mais uma forma de renderização por condição, isso pq no jsx aceita o ternario dentro do return, enquanto o if else é feito fora do return, 
+//e como o ternario é basicamnete a mesma coisa do if/else, ele é muito usado no react
+//condition ? expressionIfTrue : expressionIfFalse;
+//usado dentro do return, ele verifica 2 condicionais e retorna 3 coisas diferentes.
+//{this.state.userAge == "" ? buttonOne : this.state.userAge < 18 ? buttonThree:buttonTwo}
+
 //42 questao
+//Renderizar condicionalmente a partir de props
+// Usar props para renderizar código condicionalmente é muito comum com desenvolvedores React
+//você configurará um componente filho para tomar decisões de renderização com base em props
+
+//com isso fazemos uma expresao aleatoria de true e false, e de acordo com isso, imprimimos se ele ganha ou perde o jogo.
+/* 
+class Results extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  render() {
+    console.log(this.props.fiftyFifty)
+
+    return (
+      <h1>
+      {this.props.fiftyFifty ? "You Win!" : "You Lose!"}
+      </h1>
+    )
+
+    if(this.props.fiftyFifty){
+      return(
+        <h1>You Win!</h1>
+      )
+    }else{
+        return(
+          <h1>You Lose!</h1>
+        )
+    }
+  }
+}
+
+class GameOfChance extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      counter: 1
+    };
+    this.handleClick = this.handleClick.bind(this);
+  }
+  handleClick() {
+    this.setState(() => {
+      // Complete the return statement:
+      return {
+        counter: this.state.counter + 1
+      }
+    });
+  }
+  render() {
+    const expression = Math.random() >= .5; // Change this line
+    return (
+      <div>
+        <button onClick={this.handleClick}>Play Again</button>
+        <Results fiftyFifty={expression}/>
+        <p>{'Turn: ' + this.state.counter}</p>
+      </div>
+    );
+  }
+}
+*/
+
 //43 questao
+//alterar css com base no state do componente
+//ocê também pode renderizar CSS condicionalmente com base no estado de um componente React. Para fazer isso, verifique uma condição e, se essa condição for atendida, modifique o objeto de estilos atribuído aos elementos JSX no método render.
+//com isso, estamos verificando atraves de js, se o input tem mais de 15 caracteres, caso tenha ele muda a const object que ta sendo usada como estilo css.
+/* 
+class GateKeeper extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      input: ''
+    };
+    this.handleChange = this.handleChange.bind(this);
+  }
+  handleChange(event) {
+    this.setState({ input: event.target.value })
+  }
+  
+  render() {
+    let inputStyle;
+    // Change code below this line
+    if((this.state.input).length > 15){
+      inputStyle = {
+        border: '3px solid red'
+      };
+    }else{
+      inputStyle = {
+        border: '1px solid black'
+      };
+    }
+    // Change code above this line
+    return (
+      <div>
+        <h3>Don't Type Too Much:</h3>
+        <input
+          type="text"
+          style={inputStyle}
+          value={this.state.input}
+          onChange={this.handleChange} />
+      </div>
+    );
+  }
+};
+*/
+
 //44 questao
+//Use Array.map() para renderizar elementos dinamicamente
+//A renderização condicional é útil, mas você pode precisar de seus componentes para renderizar um número desconhecido de elementos. 
+//Os programadores precisam escrever seu código para lidar corretamente com esse estado desconhecido antes do tempo
+//Por exemplo, você cria um aplicativo simples "To Do List". Como programador, você não tem como saber quantos itens um usuário pode ter em sua lista.
+/* 
+const textAreaStyles = {
+  width: 235,
+  margin: 5
+};
+
+class MyToDoList extends React.Component {
+  constructor(props) {
+    super(props);
+    // Change code below this line
+    this.state = {
+      userInput : "",
+      toDoList : []
+    }
+    // Change code above this line
+    this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleChange = this.handleChange.bind(this);
+  }
+  handleSubmit() {
+    const itemsArray = this.state.userInput.split(',');
+    this.setState({
+      toDoList: itemsArray
+    });
+  }
+  handleChange(e) {
+    this.setState({
+      userInput: e.target.value
+    });
+  }
+  render() {
+    const items = this.state.toDoList.map((valor) => <li>{valor}</li>)
+    return (
+      <div>
+        <textarea
+          onChange={this.handleChange}
+          value={this.state.userInput}
+          style={textAreaStyles}
+          placeholder='Separate Items With Commas'
+        />
+        <br />
+        <button onClick={this.handleSubmit}>Create List</button>
+        <h1>My "To Do" List:</h1>
+        <ul>{items}</ul>
+      </div>
+    );
+  }
+}
+*/
+
 //45 questao
+//Quando você cria uma matriz de elementos, cada um precisa de um keyatributo definido para um valor exclusivo.
+//com isso cada elemento renderizado vai ter seu propio nome como key exclusiva, alem disso renderizamos todos 
+
+/* 
+const frontEndFrameworks = [
+  'React',
+  'Angular',
+  'Ember',
+  'Knockout',
+  'Backbone',
+  'Vue'
+];
+
+function Frameworks() {
+  const renderFrameworks = frontEndFrameworks.map((valor)=><li key={valor}>{valor}</li>); // Change this line
+  return (
+    <div>
+      <h1>Popular Front End JavaScript Frameworks</h1>
+      <ul>
+        {renderFrameworks}
+      </ul>
+    </div>
+  );
+};
+*/
+
 //46 questao
+//Use Array.filter() para filtrar dinamicamente uma matriz
+//Por exemplo, se você tiver uma matriz de usuários com uma propriedade onlineque pode ser definida como trueou false, poderá filtrar apenas os usuários que estão online escrevendo:
+//let onlineUsers = users.filter(user => user.online);
+
+//com isso usamos o filter para pegar os online e a partir disso usamos o map para renderizar o nome de cada um em uma li.
+
+/* 
+class MyComponent extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      users: [
+        {
+          username: 'Jeff',
+          online: true
+        },
+        {
+          username: 'Alan',
+          online: false
+        },
+        {
+          username: 'Mary',
+          online: true
+        },
+        {
+          username: 'Jim',
+          online: false
+        },
+        {
+          username: 'Sara',
+          online: true
+        },
+        {
+          username: 'Laura',
+          online: true
+        }
+      ]
+    };
+  }
+  render() {
+    const usersOnline = this.state.users.filter(user => user.online); // Change this line
+    console.log(usersOnline)
+    const renderOnline = usersOnline.map(user => <li key={user.username}>{user.username}</li>); // Change this line
+    return (
+      <div>
+        <h1>Current Online Users:</h1>
+        <ul>{renderOnline}</ul>
+      </div>
+    );
+  }
+}
+*/
+
 //47 questao
+//Renderize React no servidor com renderToString
+//Até agora, você tem renderizado componentes React no cliente. Normalmente, isso é o que você sempre fará.
+//No entanto, existem alguns casos de uso em que faz sentido renderizar um componente React no servidor. Como React é uma biblioteca de visualização JavaScript e você pode executar JavaScript no servidor com Node, isso é possível. 
+//. Na verdade, o React fornece um renderToString()método que você pode usar para esse propósito.
+
+/* 
+Existem duas razões principais pelas quais a renderização no servidor pode ser usada em um aplicativo do mundo real. Primeiro, sem fazer isso, seus aplicativos React 
+consistiriam em um arquivo HTML relativamente vazio e um grande pacote de JavaScript quando carregado inicialmente no navegador. Isso pode não ser ideal para mecanismos de pesquisa que 
+estão tentando indexar o conteúdo de suas páginas para que as pessoas possam encontrá-lo. Se você renderizar a marcação HTML inicial no servidor e enviá-la ao cliente, o carregamento da p
+ágina inicial conterá toda a marcação da página que pode ser rastreada pelos mecanismos de pesquisa. Em segundo lugar, isso cria uma experiência de carregamento de página inicial mais rápida
+porque o HTML renderizado é menor que o código JavaScript de todo o aplicativo. O React ainda será capaz de reconhecer seu aplicativo e gerenciá-lo após o carregamento inicial.
+*/
+
+/* 
+O renderToString()método é fornecido em ReactDOMServer, que está disponível aqui como um objeto global. O método recebe um argumento que é um elemento React. Use isso para 
+renderizar Appem uma string.
+*/
+//ReactDOMServer.renderToString(<App/>)
