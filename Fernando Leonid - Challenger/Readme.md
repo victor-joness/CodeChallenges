@@ -69,12 +69,12 @@ Se gostou da ideia acompanhe os projetos abaixo:
       <a href=""><img src="./img/06-Calculadora.gif" width="250px" ></a>
     </td>
     <td>
-      <h3>07 - To-do-list</h3>
+      <h3>07 - Player de Musica</h3>
       <li><a href="">Código</a></li>
       <a href="https://fernandoleonid.github.io/mini-projetos-js/07-todo-List/"><img src="./img/07-todo-List.gif" width="250px" ></a>
     </td>
     <td>
-      <h3>08 - CRUD</h3>
+      <h3>08 - Imagem-Editor</h3>
       <li><a href="">Código</a></li>
       <a href=""><img src="./img/08-crud.gif" width="250px" ></a>
     </td>
