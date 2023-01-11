@@ -64,17 +64,17 @@ Se gostou da ideia acompanhe os projetos abaixo:
   </tr>
   <tr>
     <td>
-      <h3>06 - Calculadora</h3>
+      <h3>09 - API Cep e Validações</h3>
       <li><a href="">Código</a></li>
       <a href=""><img src="./img/06-Calculadora.gif" width="250px" ></a>
     </td>
     <td>
-      <h3>07 - Player de Musica</h3>
+      <h3>10 - Player de Musica</h3>
       <li><a href="">Código</a></li>
-      <a href="https://fernandoleonid.github.io/mini-projetos-js/07-todo-List/"><img src="./img/07-todo-List.gif" width="250px" ></a>
+      <a href=""><img src="./img/07-todo-List.gif" width="250px" ></a>
     </td>
     <td>
-      <h3>08 - Imagem-Editor</h3>
+      <h3>11 - Imagem-Editor</h3>
       <li><a href="">Código</a></li>
       <a href=""><img src="./img/08-crud.gif" width="250px" ></a>
     </td>
