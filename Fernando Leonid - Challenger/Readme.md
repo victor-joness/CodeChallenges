@@ -66,7 +66,7 @@ Se gostou da ideia acompanhe os projetos abaixo:
     <td>
       <h3>09 - API Cep e Validações</h3>
       <li><a href="">Código</a></li>
-      <a href=""><img src="./img/06-Calculadora.gif" width="250px" ></a>
+      <a href=""><img src="./img/09-API-Cep.gif" width="250px" ></a>
     </td>
     <td>
       <h3>10 - Player de Musica</h3>
