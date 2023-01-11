@@ -14,8 +14,8 @@ Se gostou da ideia acompanhe os projetos abaixo:
   <tr>
     <td>
         <h3>00 - Calculadora IMC</h3>
-        <li><a href="">Código</a></li>
-        <a href=""><img src="./img/00-imc.gif" width="250px"></a>
+        <li><a href="https://github.com/victor-joness/CodeChallenges/tree/main/Fernando%20Leonid%20-%20Challenger/00-Calculadora%20de%20IMC">Código</a></li>
+        <a href="https://github.com/victor-joness/CodeChallenges/tree/main/Fernando%20Leonid%20-%20Challenger/00-Calculadora%20de%20IMC"><img src="./img/00-imc.gif" width="250px"></a>
     </td>
       <td>
         <h3>01 - Lâmpada</h3>
@@ -24,32 +24,32 @@ Se gostou da ideia acompanhe os projetos abaixo:
     </td>
     <td>
       <h3>02 - Semáforo</h3>
-      <li><a href="">Código</a></li>
-      <a href=""><img src="./img/02-semáfoto.gif" width="250px" ></a>
+      <li><a href="https://github.com/victor-joness/CodeChallenges/tree/main/Fernando%20Leonid%20-%20Challenger/02-Sem%C3%A1foro%20em%20Js">Código</a></li>
+      <a href="https://github.com/victor-joness/CodeChallenges/tree/main/Fernando%20Leonid%20-%20Challenger/02-Sem%C3%A1foro%20em%20Js"><img src="./img/02-semáfoto.gif" width="250px" ></a>
     </td>
   </tr>
   <tr>
     <td>
       <h3>03 - Slide Show</h3>
-      <li><a href="">Código</a></li>
-      <a href=""><img src="./img/03-slidershow.gif" width="250px" ></a>
+      <li><a href="https://github.com/victor-joness/CodeChallenges/tree/main/Fernando%20Leonid%20-%20Challenger/03-SliderShow">Código</a></li>
+      <a href="https://github.com/victor-joness/CodeChallenges/tree/main/Fernando%20Leonid%20-%20Challenger/03-SliderShow"><img src="./img/03-slidershow.gif" width="250px" ></a>
     </td>
     <td>
       <h3>04 - Drum-kit</h3>
-      <li><a href="">Código</a></li>
-      <a href=""><img src="./img/04-DRUM-KIT.gif" width="250px" ></a>
+      <li><a href="https://github.com/victor-joness/CodeChallenges/tree/main/Fernando%20Leonid%20-%20Challenger/04-DrumKit">Código</a></li>
+      <a href="https://github.com/victor-joness/CodeChallenges/tree/main/Fernando%20Leonid%20-%20Challenger/04-DrumKit"><img src="./img/04-DRUM-KIT.gif" width="250px" ></a>
     </td>
     <td>
       <h3>05 - CountDown</h3>
-      <li><a href="">Código</a></li>
-      <a href=""><img src="./img/05-countdown.gif" width="250px" ></a>
+      <li><a href="https://github.com/victor-joness/CodeChallenges/tree/main/Fernando%20Leonid%20-%20Challenger/05-CountDown">Código</a></li>
+      <a href="https://github.com/victor-joness/CodeChallenges/tree/main/Fernando%20Leonid%20-%20Challenger/05-CountDown"><img src="./img/05-countdown.gif" width="250px" ></a>
     </td>
   </tr>
   <tr>
     <td>
       <h3>06 - Calculadora</h3>
-      <li><a href="">Código</a></li>
-      <a href=""><img src="./img/06-Calculadora.gif" width="250px" ></a>
+      <li><a href="https://github.com/victor-joness/CodeChallenges/tree/main/Fernando%20Leonid%20-%20Challenger/06-Calculadora">Código</a></li>
+      <a href="https://github.com/victor-joness/CodeChallenges/tree/main/Fernando%20Leonid%20-%20Challenger/06-Calculadora"><img src="./img/06-Calculadora.gif" width="250px" ></a>
     </td>
     <td>
       <h3>07 - To-do-list</h3>
@@ -65,8 +65,8 @@ Se gostou da ideia acompanhe os projetos abaixo:
   <tr>
     <td>
       <h3>09 - API Cep e Validações</h3>
-      <li><a href="">Código</a></li>
-      <a href=""><img src="./img/09-API-Cep.gif" width="250px" ></a>
+      <li><a href="https://github.com/victor-joness/CodeChallenges/tree/main/Fernando%20Leonid%20-%20Challenger/09-API%20cep%20e%20valida%C3%A7%C3%B5es">Código</a></li>
+      <a href="https://github.com/victor-joness/CodeChallenges/tree/main/Fernando%20Leonid%20-%20Challenger/09-API%20cep%20e%20valida%C3%A7%C3%B5es"><img src="./img/09-API-Cep.gif" width="250px" ></a>
     </td>
     <td>
       <h3>10 - Player de Musica</h3>
