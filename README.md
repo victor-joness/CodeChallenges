@@ -18,7 +18,7 @@ Neste repositóio armazenarei os códigos dos desafios resolvidos que tem como o
        -> Desafio-03-Wakanda-LandingPage ✅                         
        -> Desafio-04-NiceCommerce ✅                                 
        -> Desafio-05-Trinity Game Dashboard 🚧                              
-  - [Frontloops Challenges](https://frontloopschallenges.netlify.app/): 
+  - [Frontloops Challenges](https://frontloopschallenges.netlify.app/):                                                       
        ->                                                                         
   - [He4rtlabs Challenges](https://discord.io/he4rt):                                                     
        ->Calculadora de hora p/ Freelance	Front-End	Iniciante                                                              
@@ -37,8 +37,8 @@ Neste repositóio armazenarei os códigos dos desafios resolvidos que tem como o
        -> 30 dias de Javascript, Nivel: Iniciante; 
   - [101 days Javascript and Typescripr](https://www.beecrowd.com.br/judge/en/login):                                                                     
        -> 101 dias de Javascript e Typescript, Nivel: intermediario;      
-  - [CodeWell](https://www.codewell.cc/)
+  - [CodeWell](https://www.codewell.cc/):                                                                          
        ->                                                                                     
-  - [Front-end Mentor](https://www.frontendmentor.io/challenges)
+  - [Front-end Mentor](https://www.frontendmentor.io/challenges):                                                                          
        ->                                                                         
   
