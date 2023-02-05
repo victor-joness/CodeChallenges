@@ -43,7 +43,7 @@ Neste repositóio armazenarei os códigos dos desafios resolvidos que tem como o
        ->                                                                         
   - [Hora de Codar](https://www.youtube.com/@MatheusBattisti):                                                                          
        ->To-do-List 🚧                                                                      
-  - [Br Challenges](https://www.brchallenges.com/):
+  - [Br Challenges](https://www.brchallenges.com/):                                                              
        ->                                                               
  
   
