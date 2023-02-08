@@ -42,7 +42,9 @@ Neste repositóio armazenarei os códigos dos desafios resolvidos que tem como o
   - [Front-end Mentor](https://www.frontendmentor.io/challenges):                                                                          
        ->                                                                         
   - [Hora de Codar](https://www.youtube.com/@MatheusBattisti):                                                                          
-       ->To-do-List 🚧                                                                      
+       ->To-do-List ✅  
+       ->Github Finder 🚧                                                         
+       ->OpenWeather App 🚧                                                                   
   - [Br Challenges](https://www.brchallenges.com/):                                                              
        ->                                                               
  
