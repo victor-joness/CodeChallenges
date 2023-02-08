@@ -46,6 +46,7 @@ Neste repositóio armazenarei os códigos dos desafios resolvidos que tem como o
        ->Github Finder 🚧                                                         
        ->OpenWeather App 🚧                                                                   
   - [Br Challenges](https://www.brchallenges.com/):                                                              
-       ->                                                               
+       ->Empire Burger 🚧                                                               
+       ->Blizzard 🚧                                                               
  
   
