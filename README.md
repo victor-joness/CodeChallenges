@@ -19,7 +19,7 @@ Neste repositóio armazenarei os códigos dos desafios resolvidos que tem como o
        -> Desafio-04-NiceCommerce ✅                                 
        -> Desafio-05-Trinity Game Dashboard 🚧                              
   - [Frontloops Challenges](https://frontloopschallenges.netlify.app/):                                                       
-       ->                                                                         
+        -> 30 Frontloops-Challenges                                                                                                                           
   - [He4rtlabs Challenges](https://discord.io/he4rt):                                                     
        ->Calculadora de hora p/ Freelance	Front-End	Iniciante                                                              
        ->Planilha de cotação p/ Freelance	Front-End	Iniciante                                                               
