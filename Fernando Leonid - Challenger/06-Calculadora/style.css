@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300&display=swap');
+
+:root{
+    --yellow: rgb(255, 230, 0);
+}
+
+*{
+    font-family: 'Nunito', sans-serif;
+    padding: 0; margin: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-padding-top: 7rem;
+    overflow-x: hidden;
+}
+
+.center{
+    display: flex;
+    flex-direction: column;
+    margin: 10rem auto;
+    background: var(--yellow);
+    height: 65rem;
+    width: 40rem;
+    border-radius: 10px;
+    border: 2px solid #000;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    height: 8rem;
+    border-bottom: 2px solid #000;
+}
+
+.header h1{
+    line-height: 8rem;
+    font-size: 5rem;
+    color: #000;
+}
+
+.numpad .buttons{
+    display: flex;
+    flex-wrap: wrap;
+    height: 40rem;
+    width: 35rem;
+    justify-content: center;
+    margin: auto;
+    margin-top: 2rem;
+}
+
+.numpad .buttons button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6rem;
+    width: 6rem;
+    border-radius: .5rem;
+    background: #000;
+    cursor: pointer;
+    color: #fff;
+    font-size: 2rem;
+    margin: 1rem;
+}
+
+.numpad .buttons button:hover{
+    color: var(--yellow);
+}
+
+.display{
+    display: flex;
+    justify-content: flex-end;
+    margin: auto;
+    height: 10rem;
+    width: 30rem;
+    background: #000;
+    margin-top: 2rem;
+    border-radius: .5rem;
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+    padding: 2rem;
+}

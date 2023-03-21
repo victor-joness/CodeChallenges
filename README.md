@@ -11,14 +11,15 @@ Neste repositóio armazenarei os códigos dos desafios resolvidos que tem como o
        -> Problem Solving                                          
   - [freeCodeCamp](https://www.freecodecamp.org/learn):                                                                                  
        -> Algoritmos JavaScript e Estruturas de Dados ✅                                                                                     
-       -> Bibliotecas de desenvolvimento front-end                                                                                         
+       -> Bibliotecas de desenvolvimento front-end ✅                                                                                      
   - [GabiCode](https://discord.gg/Yw3n67Z9Yk):                                                                      
        -> Desafio 01 - IpCats ✅                                                                   
        -> Desafio 02 - Anywhere app ✅                           
        -> Desafio-03-Wakanda-LandingPage ✅                         
        -> Desafio-04-NiceCommerce ✅                                 
        -> Desafio-05-Trinity Game Dashboard 🚧                              
-  - [Frontloops Challenges](https://frontloopschallenges.netlify.app/): 
+  - [Frontloops Challenges](https://frontloopschallenges.netlify.app/):                                                       
+        -> 30 Frontloops-Challenges                                                                                                                           
   - [He4rtlabs Challenges](https://discord.io/he4rt):                                                     
        ->Calculadora de hora p/ Freelance	Front-End	Iniciante                                                              
        ->Planilha de cotação p/ Freelance	Front-End	Iniciante                                                               
@@ -35,4 +36,17 @@ Neste repositóio armazenarei os códigos dos desafios resolvidos que tem como o
   - [JavaScript30](https://javascript30.com/):                                                   
        -> 30 dias de Javascript, Nivel: Iniciante; 
   - [101 days Javascript and Typescripr](https://www.beecrowd.com.br/judge/en/login):                                                                     
-       -> 101 dias de Javascript e Typescript, Nivel: intermediario;                                           
+       -> 101 dias de Javascript e Typescript, Nivel: intermediario;      
+  - [CodeWell](https://www.codewell.cc/):                                                                          
+       ->                                                                                     
+  - [Front-end Mentor](https://www.frontendmentor.io/challenges):                                                                          
+       ->                                                                         
+  - [Hora de Codar](https://www.youtube.com/@MatheusBattisti):                                                                          
+       ->To-do-List ✅  
+       ->Github Finder 🚧                                                         
+       ->OpenWeather App 🚧                                                                   
+  - [Br Challenges](https://www.brchallenges.com/):                                                              
+       ->Empire Burger 🚧                                                               
+       ->Blizzard 🚧                                                               
+ 
+  
