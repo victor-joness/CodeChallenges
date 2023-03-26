@@ -1,8 +1,12 @@
 
 /* Leia 5 valores Inteiros. A seguir mostre quantos valores digitados foram pares, quantos valores digitados foram ímpares, quantos valores digitados foram positivos e quantos valores digitados foram negativos. */
 
-var input = require('fs').readFileSync('/dev/stdin', 'utf8');
-var lines = input.split('\n').map(Number);
+/* var input = require('fs').readFileSync('/dev/stdin', 'utf8'); */
+var lines = [-5
+    ,0
+    ,-3
+    ,-4
+    ,12]/* input.split('\n').map(Number); */
 
 /**
  * Escreva a sua solução aqui
