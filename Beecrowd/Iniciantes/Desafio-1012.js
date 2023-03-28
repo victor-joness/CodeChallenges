@@ -1,6 +1,6 @@
 
-var input = require('fs').readFileSync('/dev/stdin', 'utf8');
-var lines = input.split('\n');
+/* var input = require('fs').readFileSync('/dev/stdin', 'utf8');
+var lines = input.split('\n'); */
 
 /**
  * Escreva a sua solução aqui
@@ -8,13 +8,13 @@ var lines = input.split('\n');
  * Escriba su solución aquí
  */
 
-var primeiro = (lines.shift()).split(" ");
+var primeiro = [3.0 ,4.0 ,5.2]/* (lines.shift()).split(" "); */
 
 var a = parseFloat(primeiro[0]);
 var b = parseFloat(primeiro[1]);
 var c = parseFloat(primeiro[2]);
 
-var triangulo = parseFloat(a * c) / 2);
+var triangulo = parseFloat((a * c) / 2);
 var circulo = (3.14159 * (c * c));
 var trapezio = (((a + b) * c) / 2);
 var quadrado = b * b;
