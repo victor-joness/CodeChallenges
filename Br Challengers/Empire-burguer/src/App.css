@@ -1,0 +1,805 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;0,900;1,300;1,400&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&display=swap");
+
+:root {
+  --red: #a01b16;
+  --black: #444;
+  --light-color: #777;
+  --box-shadow: 0.5rem 0.5rem 0 rgba(22, 160, 133, 0.2);
+  --text-shadow: 0.4rem 0.4rem 0 rgba(0, 0, 0, 0.2);
+  --border: 0.2rem solid var(--red);
+}
+
+section {
+  padding: 2rem 20%;
+}
+
+.btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 20px;
+  gap: 12px;
+  color: white;
+  background: #f43127;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+/* heander */
+
+.header {
+  padding: 2rem 9%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header .navbar a {
+  font-size: 1.7rem;
+  color: black;
+  margin-left: 2rem;
+}
+
+.header .navbar a:hover {
+  font-weight: bolder;
+}
+
+.header .buttons {
+  display: flex;
+  width: 200px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.header .buttons .ifood {
+  width: 5rem;
+  height: 5rem;
+  cursor: pointer;
+  padding: 5px;
+  border: 0.2rem solid transparent;
+  background-color: #f59a1b;
+  border-radius: 0.5rem;
+}
+
+.header .buttons .ifood:hover {
+  border: 0.2rem solid var(--red);
+}
+
+.header .buttons .ifood img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.header .buttons .instagram {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  padding: 5px;
+  border: 0.2rem solid transparent;
+  background-color: #f59a1b;
+  border-radius: 0.5rem;
+}
+
+.header .buttons .instagram img {
+  width: 100%;
+  height: 100%;
+}
+
+.header .buttons .instagram:hover {
+  border: 0.2rem solid var(--red);
+}
+
+.header .buttons .separador {
+  width: 1px;
+  height: 40px;
+  background-color: #444;
+  color: #444;
+}
+
+.header .buttons .button {
+  display: flex;
+  width: 100px;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #f59a1b;
+  gap: 5px;
+  font-size: 1.4rem;
+  line-height: 1.5rem;
+  cursor: pointer;
+  border: 0.2rem solid transparent;
+}
+
+.header .buttons .button:hover {
+  border: 0.2rem solid var(--red);
+}
+
+.header .buttons .button .image {
+  width: 20px;
+}
+
+.header .buttons .button .image img {
+  width: 100%;
+}
+
+#menu-btn {
+  font-size: 2.5rem;
+  border-radius: 0.5rem;
+  background: #eee;
+  color: var(--red);
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+
+/* home */
+
+.Home-Header {
+  background-image: url("./assets/banner-hero.png");
+  height: 600px;
+  width: 100vw;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Home {
+  position: relative;
+  top: 200px;
+  left: 10%;
+}
+
+.Home h2 {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 23px;
+  color: rgba(29, 6, 5, 0.9);
+}
+
+.Home h1 {
+  font-family: "Lilita One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 77px;
+  line-height: 85px;
+
+  text-transform: uppercase;
+
+  color: #3b200b;
+}
+
+.Home h1 span {
+  font-family: "Lilita One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 77px;
+  line-height: 85px;
+
+  text-transform: uppercase;
+
+  color: #f59a1b;
+}
+
+.Home h3 {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 32px;
+
+  color: rgba(29, 6, 5, 0.69);
+}
+
+.Home h3 span {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 22.861px;
+  line-height: 32px;
+  background-color: #f59a1b;
+  padding: 5px;
+  border-radius: 0.5rem;
+  color: rgba(29, 6, 5, 0.69);
+}
+
+/* ofertas section */
+
+.ofertas-especiais {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+
+  background-color: #faf3f2;
+}
+
+.ofertas-especiais .ofertas {
+  display: flex;
+  flex-direction: column;
+  margin-top: 12rem;
+}
+
+.ofertas-especiais .ofertas h1 {
+  font-family: "Lilita One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3.2rem;
+  line-height: 3.5rem;
+  text-transform: uppercase;
+  color: rgba(29, 6, 5, 0.9);
+}
+
+.ofertas-especiais .ofertas p {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  color: rgba(29, 6, 5, 0.69);
+  margin-top: 0.5rem;
+}
+
+.ofertas-especiais .ofertas .ofertas-modal {
+  margin-top: 2rem;
+  display: flex;
+  gap: 2rem;
+}
+
+.ofertas-especiais .ofertas .ofertas-modal .box-lateral {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.ofertas-especiais .horario {
+  display: flex;
+  gap: 2rem;
+}
+
+.ofertas-especiais .horario .horario-modal {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  background: #f43127;
+  border-radius: 10px;
+  padding: 1rem;
+  width: 50rem;
+}
+
+.ofertas-especiais .horario .horario-modal .horario-modal-infos h1 {
+  font-family: "Lilita One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: rgba(29, 6, 5, 0.69);
+}
+
+.ofertas-especiais .horario .horario-modal .horario-modal-infos p {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.ofertas-especiais .horario .horario-modal .image {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  background-color: rgba(29, 6, 5, 0.2);
+  padding: 2rem;
+}
+
+.ofertas-especiais .horario .horario-modal .image img {
+  height: 100%;
+  width: 100%;
+}
+
+.ofertas-especiais .horario .instagram {
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+  margin-bottom: auto;
+  gap: 1rem;
+}
+
+.ofertas-especiais .horario .instagram p {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: rgba(29, 6, 5, 0.69);
+}
+
+.ofertas-especiais .horario .instagram h1 {
+  font-family: "Lilita One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28.0202px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #f43127;
+}
+
+/* pedido */
+
+.pedido-section {
+  background-color: #faf3f2;
+}
+
+.pedido {
+  display: flex;
+  background-color: #f43127;
+  padding: 1rem;
+  gap: 2rem;
+  border-radius: 1rem;
+}
+
+.pedido .image {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  padding: 2rem;
+  background: rgba(29, 6, 5, 0.2);
+}
+
+.pedido .image img {
+  height: 100%;
+  width: 100%;
+}
+
+.pedido .container {
+  display: flex;
+}
+
+.pedido .infos {
+  display: flex;
+  flex-direction: column;
+  margin-right: 2rem;
+  border-left: .1rem solid rgb(0, 0, 0);
+  margin: auto;
+}
+
+.pedido .infos h1 {
+  font-family: "Lilita One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: rgba(29, 6, 5, 0.69);
+  margin-left: 1rem;
+}
+
+.pedido .infos p {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: rgba(255, 255, 255, 0.9);
+  margin-left: 1rem;
+  width: 60rem;
+}
+
+.pedido .infos p span {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: bolder;
+}
+
+.pedido .container button {
+  width: 20rem;
+  height: 5rem;
+  background-color: #fae4d0;
+
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #f43127;
+  border-radius: .5rem;
+  cursor: pointer;
+  margin: auto;
+  margin-left: 10rem;
+}
+
+@media (max-width: 1500px) {
+  section {
+    padding: 2rem 12%;
+  }
+}
+
+@media (max-width: 1400px) {
+  section {
+    padding: 2rem 9%;
+  }
+}
+
+@media (max-width: 1300px) {
+  section {
+    padding: 2rem 5%;
+  }
+
+  .Home {
+    left: 5%;
+  }
+}
+
+@media (max-width: 1200px) {
+  section {
+    padding: 2rem 9%;
+  }
+
+  .ofertas-especiais .ofertas .ofertas-modal .box1 {
+    width: 650px;
+  }
+
+  .ofertas-especiais .ofertas .ofertas-modal .box1 img {
+    width: 100%;
+  }
+
+  .ofertas-especiais .ofertas .ofertas-modal .box-lateral .box2 {
+    width: 300px;
+    height: 150px;
+  }
+
+  .ofertas-especiais .ofertas .ofertas-modal .box-lateral .box2 img {
+    height: 100%;
+    width: 100%;
+  }
+
+  .ofertas-especiais .ofertas .ofertas-modal .box-lateral .box3 {
+    width: 300px;
+    height: 150px;
+  }
+
+  .ofertas-especiais .ofertas .ofertas-modal .box-lateral .box3 img {
+    height: 100%;
+    width: 100%;
+  }
+
+  .ofertas-especiais .ofertas .ofertas-modal .box-lateral {
+    gap: 6.5rem;
+  }
+
+  .pedido .image {
+    width: 7rem;
+    height: 7rem;
+  }
+
+  .pedido .container button{
+    margin-left: 10rem;
+  }
+
+  .pedido .infos h1 {
+    font-size: 2rem;
+  }
+
+  .pedido .infos p{
+    font-size: 1.5rem;
+    width: 50rem;
+  }
+}
+
+@media (max-width: 1150px) {
+  html {
+    font-size: 55%;
+  }
+
+  .header {
+    padding: 2rem;
+  }
+
+  section {
+    padding: 2rem 6%;
+  }
+
+  .Home h1 {
+    font-size: 65px;
+  }
+
+  .Home h1 span {
+    font-size: 65px;
+  }
+
+  .Home h3 {
+    font-size: 18px;
+  }
+
+  .Home h3 span {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 1050px) {
+  #menu-btn {
+    display: initial;
+  }
+
+  .header .navbar {
+    position: absolute;
+    top: 115%;
+    right: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: var(--box-shadow);
+    width: 30rem;
+    background: #fae2cb;
+    border: var(--border);
+    transform: scale(0);
+    opacity: 0;
+    transform-origin: top right;
+    transition: none;
+  }
+
+  .header .buttons {
+    position: absolute;
+    top: 615%;
+    right: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: var(--box-shadow);
+    width: 30rem;
+    background: #fae2cb;
+    border: var(--border);
+    transform: scale(0);
+    opacity: 0;
+    transform-origin: top right;
+    transition: none;
+  }
+
+  .header .navbar.active {
+    opacity: 1;
+    transform: scale(1);
+    transition: 0.2s all ease-in;
+  }
+
+  .header .buttons.active {
+    opacity: 1;
+    transform: scale(1);
+    transition: 0.2s all ease-in;
+  }
+
+  .header .navbar a {
+    font-size: 2rem;
+    display: block;
+    margin: 2.5rem;
+    padding: 1rem;
+    border: 2px solid var(--red);
+    text-align: center;
+    border-radius: 0.5rem;
+  }
+
+  .ofertas-especiais .ofertas .ofertas-modal .box-lateral {
+    gap: 1rem;
+  }
+
+  .ofertas-especiais .ofertas .ofertas-modal .box1 {
+    width: 550px;
+  }
+
+  .ofertas-especiais .ofertas .ofertas-modal .box-lateral .box2 {
+    width: 250px;
+    height: 150px;
+  }
+
+  .ofertas-especiais .ofertas .ofertas-modal .box-lateral .box3 {
+    width: 250px;
+    height: 150px;
+  }
+
+  .ofertas-especiais .horario .instagram p {
+    font-size: 14px;
+  }
+
+  .ofertas-especiais .horario .instagram h1 {
+    font-size: 22px;
+  }
+
+  .ofertas-especiais .horario .horario-modal {
+    width: 40rem;
+  }
+
+  .ofertas-especiais .horario .horario-modal .horario-modal-infos h1 {
+    font-size: 20px;
+  }
+
+  .ofertas-especiais .horario .horario-modal .horario-modal-infos p {
+    font-size: 12px;
+  }
+
+  .ofertas-especiais .horario .horario-modal .image {
+    width: 7rem;
+    height: 7rem;
+  }
+
+  .pedido{
+    gap: 0rem;
+  }
+
+  .pedido .image {
+    width: 5rem;
+    height: 5rem;
+    padding: 1rem;
+    margin: 2rem;
+  }
+
+
+  .pedido .container button{
+    font-size: 1.5rem;
+    width: 16rem;
+    margin-left: 5rem;
+  }
+
+  .pedido .infos p {
+    font-size: 1.3rem;
+  }
+  
+  .pedido .infos p span {
+    font-size: 1.2rem;
+  }
+
+  /* Trocar background */
+}
+
+@media (max-width: 920px) {
+  section {
+    padding-top: 20rem;
+  }
+
+  .ofertas-especiais .ofertas .ofertas-modal {
+    flex-direction: column;
+  }
+
+  .ofertas-especiais .ofertas .ofertas-modal .box1 {
+    width: 80%;
+    margin: auto;
+  }
+
+  .ofertas-especiais .ofertas .ofertas-modal .box-lateral {
+    gap: 3rem;
+  }
+
+  .ofertas-especiais .ofertas .ofertas-modal .box-lateral .box2 {
+    width: 80%;
+    height: 200px;
+    margin: auto;
+  }
+
+  .ofertas-especiais .ofertas .ofertas-modal .box-lateral .box3 {
+    width: 80%;
+    height: 200px;
+    margin: auto;
+  }
+
+  .Home-Header {
+    background-image: url("./assets/Banner-mobile.png");
+    height: 850px;
+    background-repeat: repeat;
+    background-size: contain;
+  }
+
+  .Home {
+    top: 10rem;
+    left: 25%;
+  }
+
+  .pedido-section{
+    padding-top: 2rem;
+  }
+
+  .pedido .image {
+    margin: 1rem;
+  }
+
+  .pedido .container button{
+    margin-left: 0rem;
+  }
+
+  .pedido .infos p {
+    width: 45rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .pedido{
+    flex-direction: column;
+  }
+
+  .pedido .image{
+    margin: auto;
+  }
+
+  .pedido .container{
+    flex-direction: column;
+  }
+
+  .pedido .infos{
+    border-left: none;
+    text-align: center;
+  }
+
+  .pedido .container button{
+    margin: auto;
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .Home {
+    top: 10rem;
+    left: 20%;
+  }
+
+  .ofertas-especiais .horario {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    margin: auto;
+  }
+
+  .ofertas-especiais .horario .horario-modal {
+    width: 48rem;
+    justify-content: center;
+  }
+
+  .ofertas-especiais .horario .instagram {
+    margin: auto;
+  }
+
+  .ofertas-especiais .horario .instagram h1 {
+    margin: auto;
+  }
+}
+
+@media (max-width: 550px) {
+  .Home {
+    top: 10rem;
+    left: 12%;
+  }
+
+  .ofertas-especiais .horario .horario-modal {
+    width: 40rem;
+    justify-content: center;
+  }
+
+  .pedido .infos p {
+    width: 35rem;
+  }
+}
+
+@media (max-width: 500px) {
+  html {
+    font-size: 50%;
+  }
+
+  .Home {
+    top: 10rem;
+    left: 7%;
+  }
+}
