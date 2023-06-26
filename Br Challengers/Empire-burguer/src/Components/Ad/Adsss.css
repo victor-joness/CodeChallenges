@@ -1,0 +1,81 @@
+.ad-container {
+  background-color: #faf3f2;
+  display: flex;
+  flex-direction: column;
+}
+
+.ad-container h1 {
+  font-family: "Lilita One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 35px;
+  text-align: center;
+  text-transform: uppercase;
+  color: rgba(29, 6, 5, 0.9);
+}
+
+.ad-container p {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: rgba(29, 6, 5, 0.69);
+  margin-top: 1rem;
+}
+
+.ad-container .images {
+  display: flex;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.ad-container .images .img {
+  width: 20rem;
+  height: 20rem;
+}
+
+.ad-container .images .img img {
+  width: 100%;
+  height: 100%;
+}
+
+.ad-container .rodape {
+  background: #f59a1b;
+  mix-blend-mode: normal;
+  padding: 1rem;
+}
+
+.ad-container .rodape h1 {
+  font-family: "Lilita One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: rgba(29, 6, 5, 0.9);
+  height: 2.5rem;
+  overflow-y: hidden;
+}
+
+@media (max-width: 980px) {
+  .ad-container .images .img:nth-child(even) {
+    display: none;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .ad-container .images .img:nth-child(1) {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .ad-container .images .img:nth-child(3) {
+    display: none;
+  }
+}
