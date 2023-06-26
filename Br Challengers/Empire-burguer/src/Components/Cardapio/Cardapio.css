@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;0,900;1,300;1,400&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&display=swap");
+
+:root {
+  --red: #a01b16;
+  --black: #444;
+  --light-color: #777;
+  --box-shadow: 0.5rem 0.5rem 0 rgba(22, 160, 133, 0.2);
+  --text-shadow: 0.4rem 0.4rem 0 rgba(0, 0, 0, 0.2);
+  --border: 0.2rem solid var(--red);
+}
+
+.btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 20px;
+  gap: 12px;
+  color: white;
+  background: #f43127;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.cardapio {
+  display: flex;
+  padding: 0rem 0%;
+  width: 100vw;
+}
+
+/* cardapio esquerda */
+
+.cardapio .cardapio-esquerda {
+  display: flex;
+  flex-direction: column;
+  background-image: url("../../assets/banner-menu.png");
+  width: 49%;
+}
+
+.cardapio .cardapio-esquerda .infos {
+  position: relative;
+  width: 40%;
+  top: 17rem;
+  left: 40rem;
+}
+
+.cardapio .cardapio-esquerda .infos h1 {
+  font-family: "Lilita One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3rem;
+  line-height: 46px;
+  text-transform: uppercase;
+  color: #3b200b;
+}
+
+.cardapio .cardapio-esquerda .infos h1 span {
+  font-family: "Lilita One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3rem;
+  line-height: 46px;
+  text-transform: uppercase;
+  color: #3b200b;
+  background-color: #f59a1b;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.cardapio .cardapio-esquerda .infos p {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: rgba(29, 6, 5, 0.69);
+  margin-top: 1rem;
+}
+
+/* cardapio direita */
+
+.cardapio .cardapio-direita {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+  background-image: url("../../assets/Rectangle-608.png");
+  width: 51%;
+}
+
+.cardapio .cardapio-direita .infos h1 {
+  font-family: "Lilita One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 35px;
+  text-transform: uppercase;
+  color: #f59a1b;
+}
+
+.cardapio .cardapio-direita .infos .box {
+  display: flex;
+  flex-direction: column;
+}
+
+.cardapio .cardapio-direita .infos .box .name_price {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.cardapio .cardapio-direita .infos .box .name_price h2 {
+  font-family: "Lilita One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #fae4d0;
+}
+
+.cardapio .cardapio-direita .infos .box p {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: rgba(255, 255, 255, 0.9);
+  margin-top: 1rem;
+  width: 50%;
+}
+
+@media (max-width: 1380px) {
+  .cardapio {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cardapio .cardapio-esquerda {
+    height: 50rem;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .cardapio .cardapio-esquerda .infos {
+    position: relative;
+    width: 50%;
+    top: 17rem;
+    left: 43%;
+  }
+
+  .cardapio .cardapio-direita {
+    width: 100vw;
+  }
+  .cardapio .cardapio-direita .infos{
+    margin: auto;
+    width: 48%;
+  }
+
+  .cardapio .cardapio-direita .infos h1{
+    text-align: center;
+  }
+
+  .cardapio .cardapio-direita .infos .box p{
+    width: 82%;
+  }
+}
+
+@media (max-width: 1050px) {
+    .cardapio .cardapio-direita .infos{
+        width: 60%;
+    }
+}
+
+@media (max-width: 900px) {
+    .cardapio .cardapio-direita .infos{
+        width: 70%;
+    }
+}
+
+@media (max-width: 800px) {
+    .cardapio .cardapio-direita .infos{
+        width: 80%;
+    }
+}
+
+@media (max-width: 700px) {
+    .cardapio .cardapio-direita .infos{
+        width: 90%;
+    }
+
+    .cardapio .cardapio-direita .infos h1{
+        font-size: 2.5rem;
+    }
+
+    .cardapio .cardapio-esquerda {
+        background-position-x: -15rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .cardapio .cardapio-direita .infos{
+        width: 100%;
+    }
+
+    .cardapio .cardapio-direita .infos .box p{
+        width: 100%;
+    }
+
+    .cardapio .cardapio-esquerda .infos {
+        position: relative;
+        width: 50%;
+        top: 10rem;
+        left: 43%;
+      }
+
+}
