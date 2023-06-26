@@ -1,0 +1,220 @@
+.section-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  background-color: #faf3f2;
+}
+
+.section-container .superior {
+  display: flex;
+  gap: 5rem;
+  padding: 5rem;
+  border-bottom: 0.1rem solid grey;
+}
+
+.section-container .superior .image {
+  flex: 1 1 45rem;
+}
+
+.section-container .superior .image img {
+  width: 100%;
+}
+
+.section-container .superior .infos {
+  flex: 1 1 45rem;
+  margin: auto;
+}
+
+.section-container .superior .infos h1 {
+  font-family: "Lilita One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3.5rem;
+  line-height: 46px;
+  text-transform: uppercase;
+  color: rgba(29, 6, 5, 0.9);
+}
+
+.section-container .superior .infos h1 span {
+  font-family: "Lilita One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3.5rem;
+  line-height: 46px;
+  text-transform: uppercase;
+  color: rgba(29, 6, 5, 0.9);
+  background-color: #f59a1b;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.section-container .superior .infos p {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.7rem;
+  line-height: 3rem;
+  color: rgba(29, 6, 5, 0.69);
+  margin-top: 1rem;
+}
+
+/* inferior */
+
+.inferior {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.inferior .infos {
+  display: flex;
+  flex-direction: column;
+}
+
+.inferior .infos h1 {
+  font-family: "Lilita One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 35px;
+  text-transform: uppercase;
+  color: rgba(29, 6, 5, 0.9);
+}
+
+.inferior .infos p {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: rgba(29, 6, 5, 0.69);
+}
+
+.inferior .wrapper {
+  margin-top: 2rem;
+}
+
+.inferior .wrapper .box {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  margin-bottom: 3rem;
+  cursor: grab;
+}
+
+.inferior .wrapper .box:active {
+  cursor: grabbing;
+}
+
+.inferior .wrapper .box p {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 22px;
+  color: #635352;
+}
+
+.inferior .wrapper .box .user {
+  display: flex;
+  margin-top: 1rem;
+}
+
+.inferior .wrapper .box .user .image {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+}
+
+.inferior .wrapper .box .user .image img {
+  width: 100%;
+  height: 100%;
+}
+
+.inferior .wrapper .box .user .infos {
+  display: flex;
+  flex-direction: column;
+  line-height: 1rem;
+  margin-left: 1rem;
+  margin-top: auto;
+}
+
+.inferior .wrapper .box .user .infos h1 {
+  font-size: 2rem;
+  line-height: 20px;
+}
+
+.swiper-horizontal > .swiper-scrollbar,
+.swiper-scrollbar.swiper-scrollbar-horizontal {
+  display: none;
+}
+
+.swiper-button-next.swiper-button-disabled,
+.swiper-button-prev.swiper-button-disabled {
+  display: none;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  display: none !important;
+}
+
+@media (max-width: 920px) {
+  .section-container {
+    padding-top: 2rem;
+  }
+
+  .section-container .superior .image {
+    flex: 1 1 35rem;
+  }
+
+  .section-container .superior .infos {
+    flex: 1 1 30rem;
+    margin: auto;
+  }
+
+  .section-container .superior .infos h1 {
+    font-size: 2.5rem;
+  }
+
+  .section-container .superior .infos h1 span {
+    font-size: 2.5rem;
+  }
+
+  .section-container .superior .infos p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-container .superior {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section-container .superior .infos h1 {
+    text-align: center;
+  }
+
+  .section-container .superior .infos p {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .section-container .superior .infos .btn {
+    margin: auto;
+    margin-top: 1rem;
+  }
+
+  .section-container .superior .infos {
+    flex: 1 1 20rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .section-container .superior .image {
+    flex: 1 1 25rem;
+  }
+}
